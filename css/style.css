@@ -1,0 +1,5292 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+/* 主視覺 */
+/* 主視覺 END*/
+
+/* 主視覺 */
+/* 主視覺 END*/
+
+
+
+/* 主視覺 */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100vw; /* 限制寬度為視窗寬度 */
+  overflow-x: hidden; /* 裁切掉橫向超出部分，防止橫軸拖拉 */
+}
+
+.heroSection {
+  z-index: 17;
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/cover no-repeat;
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 29px auto 443px;
+  width: 92.77%;
+  max-width: 1295.0625px;
+}
+
+@media (max-width: 991px) {
+  .contentWrapper {
+    margin: 29px auto 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contentWrapper {
+    margin: 29px auto 80px;
+  }
+}
+
+@media (max-width: 383px) {
+  .contentWrapper {
+    margin: 29px auto 50px;
+  }
+}
+
+.mainContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 81px 0;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    gap: 150px 0;
+    max-height: 760px;
+
+  }
+}
+
+@media (max-width: 383px) {
+  .mainContent {
+    gap: 50px 0;
+  }
+}
+
+.navigationBar {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+@media (max-width: 383px) {
+  .navigationBar {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+
+.logoImage {
+  margin: 5px 0 0;
+  width: 158px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.menuItems {
+  display: flex;
+  gap: 0 15px;
+  margin: 0 0 30px;
+  width: 448px;
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .menuItems {
+    display: none !important;
+  }
+}
+
+.overtimeLink,
+.salaryLink,
+.leaveLink,
+.managementLink,
+.marketingLink,
+.contactLink {
+  display: flex;
+  align-items: center;
+  font: 700 14px/1.55 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.39px;
+}
+
+.headlineContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 220px 0;
+  margin: 20% 20% 0 auto;
+  width: 710px;
+  max-width: 85%;
+}
+
+@media (max-width: 768px) {
+  .headlineContainer {
+    margin: 40% auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .headlineContainer {
+    gap: 150px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .headlineContainer {
+    gap: 80px 0;
+  }
+}
+
+@media (max-width: 383px) {
+  .headlineContainer {
+    gap: 50px 0;
+  }
+}
+
+.headlineWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headlineContent {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 600px;
+}
+
+
+.decorativeDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 26.58% 0 auto;
+  width: 175px;
+  max-width: 85%;
+  font: 100 42px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 991px) {
+  .decorativeDots {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 575px) {
+  .decorativeDots {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .decorativeDots {
+    font-size: 34px;
+  }
+}
+
+.mainHeadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 44px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 991px) {
+  .mainHeadline {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeadline {
+    font-size: 34px;
+  }
+}
+
+.mainHeadline1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 40px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+  margin: 20px 0;
+
+}
+@media (max-width: 991px) {
+  .mainHeadline1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeadline1 {
+    font-size: 32px;
+  }
+}
+
+
+.accentColor {
+  width: 100%;
+  min-height: 15px;
+  background-color: white;
+}
+
+.imageCaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 12.25%;
+  width: 465px;
+  max-width: 85%;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .imageCaption {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .imageCaption {
+    font-size: 18px;
+  }
+}
+.surveyDescription {
+  display: flex;
+  align-items: center;
+  margin: 0 20% 0 ;
+  font: 700 18px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .surveyDescription {
+    font-size: 16px;
+    margin: 0 5% 0 ;
+
+  }
+}
+
+/* 主視覺 end */
+
+/* 調整電腦版 Section之間的垂直距離調整 */
+@media (min-width: 768px) {
+
+  .Section_1_1,
+  .Section_1_2,
+  .Section_1_3,
+  .Section_1_4,
+  .Section_1_5,
+  .Section_1_7,
+  .Section_1_8,
+  .Section_1_S1,
+  .Section_1_S2,
+  .Section_1_S3,
+  .Section_2_1,
+  .Section_2_2,
+  .Section_2_3,
+  .Section_2_4,
+  .Section_2_5,
+  .Section_2_6,
+  .Section_2_7,
+  .Section_2_8,
+  .Section_2_9,
+  .Section_3_1,
+  .Section_3_2,
+  .Section_3_3,
+  .Section_3_4,
+  .Section_3_5,
+  .Section_3_6,
+  .Section_3_7,
+  .Section_3_8,
+  .Section_3_9,
+  .Section_3_10,
+  .Section_3_S2,
+  .Section_4_2,
+  .Section_4_S1,
+  .Section_sum
+  {
+    margin-top: 50px; /* 增加 Section_1_2 頂部距離 */
+  }
+
+  .Section_2_9,
+  .Section_3_10 {
+  margin-bottom: 100px; 
+}
+
+}
+/* 調整電腦版 Section之間的垂直距離調整 emd */
+
+/* 調整手機版 Section之間的垂直距離調整 */
+@media (max-width: 768px) {
+  .Section_1_1,
+  .Section_1_2,
+  .Section_1_3,
+  .Section_1_4,
+  .Section_1_5,
+  .Section_1_7,
+  .Section_1_8,
+  .Section_1_S1,
+  .Section_1_S2,
+  .Section_2_1,
+  .Section_2_2,
+  .Section_2_3,
+  .Section_2_4,
+  .Section_2_5,
+  .Section_2_7,
+  .Section_2_8,
+  .Section_2_9,
+  .Section_3_1,
+  .Section_3_2,
+  .Section_3_3,
+  .Section_3_4,
+  .Section_3_5,
+  .Section_3_6,
+  .Section_3_7,
+  .Section_3_8,
+  .Section_3_9,
+  .Section_3_10,
+  .Section_3_S2,
+  .Section_4_2,
+  .Section_4_S1,
+  .Section_sum
+  {
+    margin-top: 30px; /* 增加 Section_1_2 頂部距離 */
+  }
+
+
+  .Section_1_S3 {
+    margin-top: 70px; 
+  }
+
+  .Section_2_6 {
+    margin-top: 120px; 
+  }
+
+  .Section_2_9,
+  .Section_3_10 {
+  margin-bottom: 100px; 
+}
+
+}
+
+/* 調整手機版 Section之間的垂直距離調整 end */
+
+
+/* 圖表區域 1-1開始 */
+.discussionSection {
+  position: relative;
+  z-index: 14;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.titleContainer1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 850px;
+}
+.titleContainer5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 65.5px auto;
+  width: 556px;
+  max-width: 100%;
+}
+.headingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 垂直置中 */
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+
+.mainHeading1 {
+  display: inline-block; /* 讓寬度隨內容變化 */
+  position: relative; /* 為了使用絕對定位的底線 */
+  margin: 0 8px 0 10px;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.89px;
+}
+
+.subHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+/* 設置Flourish圖表和內容方格 */
+.imageContainer {
+  flex: 1 1 60%; /* Flourish圖表占60%寬度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 垂直置中 */
+}
+
+.imageContainer1 {
+  display: flex;
+  justify-content: center;
+  width: 150%; /* Flourish圖表占60%區域的80% */
+  padding: 0 2.5%; /* 左右各2.5%的間隔 */
+}
+
+.chart-wrapper {
+  width: 80%; /* Flourish圖表占60%區域的80% */
+  padding: 0 2.5%; /* 左右各2.5%的間隔 */
+}
+
+
+
+/* Flourish 圖表的容器設置，兩個圖表各佔 50% */
+/* 圖表2-5,2-6 設定 */
+.chartsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Section_2_5 .chart-wrapper,
+.Section_2_6 .chart-wrapper {
+  flex: 1 1 50%; /* 每個圖表佔 50% 寬度 */
+  padding: 0 5%;
+}
+
+.Section_2_5 .contentContainer,
+.Section_2_6 .contentContainer {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5% ;
+}
+/* 圖表2-5,2-6 設定 end*/
+
+/* 圖表4-2,3-S2 設定 */
+.Section_3_S2 .contentContainer,
+.Section_4_2 .contentContainer{
+  margin: 0 9%; /* 水平置中 */
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* 使文字方格和內容垂直排列 */
+}
+
+.Section_sum .contentContainer {
+  align-items: flex-end;
+}
+
+.Section_3_S2 .flourish-embed {
+  width: 100%;
+  display: block;
+}
+
+.Section_4_2 .flourish-embed {
+  width: 120%;
+  display: block;
+}
+
+
+/* 控制文字方格置中的寬度 */
+.Section_3_S2 .statisticsWrapper,
+.Section_4_2 .statisticsWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+  width: 90%; 
+  padding: 0 2.5%; /* 左右各2.5%的間隔 */
+}
+
+
+@media (min-width: 768px) {
+  .Section_4_2 .statisticsWrapper {
+    width: 100%; 
+  }
+  }  
+
+/* 控制對話框的寬度 */
+.Section_4_2 .contentContainer4 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 85%; 
+}
+
+@media (max-width: 768px) {
+
+  .Section_4_2 .keyFeaturesContent{
+    display: flex;
+    padding: 0 2.5% 7%;  /* 左右間距 5% */
+  }
+
+
+  .Section_4_2 .contentContainer4 {
+    order: -1; 
+  }
+
+  .keyFeaturesWrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Section_4_2 .flourish-embed {
+    margin: 2em 0 0;
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+  }
+
+}
+/* 圖表4-2,3-S2 設定 end */
+
+
+/* 圖表1-S1 設定點選位置  */
+.colorIndicators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 14px 14px 0 0;
+  width: 400px;
+}
+
+.platformIndicator1 {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  background-color: #56acd4;
+  border-radius: 20px;
+}
+.platformIndicator2 {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  background-color: #a1d8f2;
+  border-radius: 20px;
+}
+.platformIndicator3 {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  background-color: #f8ab92;
+  border-radius: 20px;
+}
+.platformIndicator4 {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  background-color: #f29a9a;
+  border-radius: 20px;
+}
+
+.clickPrompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 15px/2.66 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #fdc023;
+  text-align: center;
+}
+
+/* 圖表1-S1 設定點選位置end  */
+
+/* 文字方格的格式  */
+.contentContainer {
+  flex: 1 1 40%; /* 文字方格和圖片占40%寬度 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statisticsWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+  width: 80%; /* 占40%區域的80% */
+  padding: 0 2.5%; /* 左右各2.5%的間隔 */
+}
+.statisticsWrapper1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* 占40%區域的80% */
+  padding: 0 2.5%; /* 左右各2.5%的間隔 */
+}
+
+.statisticsContent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px 0;
+  margin: 21px 37px 38.5px 38px;
+}
+
+.statisticsHeader1 {
+  display: flex;
+  gap: 0 27px;
+  width: 320px;
+  max-width: 100%;
+}
+
+
+.statisticsIcon1 {
+  margin: 1px 0 0;
+  width: 37px;
+  height: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.statisticsTitle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 6px;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+
+.statisticsDescription1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: -1.61px;
+}
+/* 文字方格的格式 end */
+
+/* 文字方格的圖片 */
+.imageOverlayContainer {
+  position: absolute;
+  top: 60%; /* 根據圖片大小調整這個值，讓圖片壓在文字方格上 */
+  right: 10%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中對齊 */
+  z-index: 10; /* 確保圖片壓在文字方格上方 */
+}
+
+.Section_2_7.imageOverlayContainer {
+  position: absolute;
+  top: 60%; 
+  right: 15%;
+  transform: translateX(-50%); /* 水平居中對齊 */
+  z-index: 10; /* 確保圖片壓在文字方格上方 */
+}
+
+.OverlayImage {
+  width: 100px; /* 根據需求調整圖片大小 */
+  height: auto;
+}
+
+
+/* 文字方格的圖片 END*/
+
+
+/* 企業觀點、圖片的格式，在文字方格之下  */
+.screenshotWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  width: 80%; /* 占40%區域的80% */
+  margin-bottom: 10%;
+  transition: height 0.3s ease; 
+}
+
+.screenshotWrapper1 {
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  width: 80%; /* 占40%區域的80% */
+  margin-bottom: 10%;
+  transition: height 0.3s ease; 
+}
+
+.Section_2_2 .screenshotWrapper,
+.Section_2_4 .screenshotWrapper,
+.Section_2_8 .screenshotWrapper { 
+  background-color: white;
+  transform: scale(0.8); /* 縮小到原來的 0.8 倍 */
+  transform-origin: center; 
+}
+
+
+.screenshotCaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 124.5px auto;
+  font: 700 15px/3.2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+/* 企業觀點、圖片的格式，在文字方格之下 end */
+
+/* 電腦版，文字方格、圖表的margin調整  */
+@media (min-width: 768px) {
+
+  .Section_1_3  .statisticsWrapper,
+  .Section_sum  .statisticsWrapper,
+  .Section_3_5  .statisticsWrapper,
+  .Section_3_6_1  .statisticsWrapper,
+  .Section_3_6_2  .statisticsWrapper{
+      margin-top: 120px; /* 往下移120px */
+  }  
+ 
+ 
+  .Section_1_1  .statisticsWrapper,
+  .Section_1_5  .statisticsWrapper,
+  .Section_1_6  .statisticsWrapper,
+  .Section_1_S2  .statisticsWrapper,
+  .Section_2_1  .statisticsWrapper,
+  .Section_2_7  .statisticsWrapper,
+  .Section_2_9  .statisticsWrapper,
+  .Section_3_1  .statisticsWrapper,
+  .Section_3_2  .statisticsWrapper,
+  .Section_3_4  .statisticsWrapper,
+  .Section_3_7  .statisticsWrapper,
+  .Section_3_9  .statisticsWrapper,
+  .Section_4_S1  .statisticsWrapper  {
+      margin-top: 70px; /* 往下移70px */
+  }
+
+  .Section_1_1 .chart-wrapper,
+  .Section_1_5 .chart-wrapper,
+  .Section_1_6 .chart-wrapper,
+  .Section_2_1 .chart-wrapper,
+  .Section_2_7 .chart-wrapper,
+  .Section_2_9 .chart-wrapper,
+  .Section_3_1 .chart-wrapper,
+  .Section_3_2 .chart-wrapper {
+    width: 70%; /* Flourish圖表占60%區域的70% */
+    padding: 0 2.5%; /* 左右各2.5%的間隔 */
+  }
+
+  .Section_1_5 .chart-wrapper,
+  .Section_2_9 .chart-wrapper,
+  .Section_3_3 .chart-wrapper {
+    margin-top: 70px; /* 往下移70px */
+  }  
+  
+}
+
+/* 電腦版，文字方格、圖表的margin調整 end */
+
+
+/* 手機版，小結格式  */
+/* 預設佈局：Flourish 圖表 60% 左側，文字方格和圖片 40% 右側 */
+@media (max-width: 768px) {
+  .Section_sum .contentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Section_sum .contentContainer {
+    margin: 2em 0 0;
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+    
+  }
+
+  .Section_sum .statisticsWrapper {
+    margin: 2em 0 0;
+  }
+
+  .suggestionsContainer {
+    margin: 0 0 2em;
+  }
+  
+  .resourceLinks {
+    font-size: 10px;
+  }
+
+  .resourcesIllustration {
+    width: 10px;
+  }
+  
+}
+/* 手機版，小結格式 end */
+
+
+/*1_S3 延伸討論*/
+
+.Section_1_S3 .imageContainer {
+  flex: 1 1 50%; /* 圖表占60%寬度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 垂直置中 */
+}
+
+.textContent {
+  flex: 1 1 50%; 
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.articleBody {
+  display: flex;
+  flex-direction: column;
+  margin: 37px 29px 79px;
+}
+.storyBackgroundHeader {
+  display: flex;
+  gap: 0 8px;
+  margin: 5px 0 3px;
+}
+.storyIcon {
+  width: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.storyBackgroundTitle {
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+.divider {
+  margin: 7px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+
+/* 討論區域 1-S3開始 */
+
+.challengesContainer {
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5%; /* 設定圖片和文字方格之間的間隔為 2.5% */
+  width: 100%;
+  align-items: flex-start; /* 確保項目在電腦版時從頂部對齊 */
+}
+
+/*1_S3 延伸討論*/
+/*手機版，1_S3 延伸討論*/
+/* 預設佈局：Flourish 圖表 60% 左側，文字方格和圖片 40% 右側 */
+
+@media (max-width: 768px) {
+  .challengesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Section_1_S3 .imageContainer, 
+  .Section_1_S3 .contentContainer{
+    margin: 2em 0 0;
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+    
+  }
+
+  .mainHeading1 {
+    font-size: 36px;
+  }
+  .Section_3_10 .subHeading {
+    font-size: 28px;
+  }
+
+
+
+
+}
+
+/* 3-S1 延伸討論 文字_文字_文字 */
+
+.contentContainer2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 15%; /* 確保居中 */
+  width: 85%;     /* 設置總寬度 */
+  padding: 0 5%;  /* 左右間距 5% */
+}
+
+.textContent2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* 確保文字居中 */
+  gap: 30px 0;
+  margin: 0 auto ; /* 確保居中 */
+
+}
+.headingWrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 確保標題居中 */
+  width: 100%;
+}
+.titleContainer4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+.Section_sum .titleContainer4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%,white 75%);
+}
+.sectionSubheading {
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.89px;
+}
+.sectionMainHeading {
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.introductionText {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;      /* 確保沒有不必要的水平間距 */
+  padding-top: 0;      /* 去除多餘的頂部間距 */
+  font: 400 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  width: 90%;          /* 設置寬度為80% */
+  text-align: left;    /* 將文本對齊方式設置為左對齊 */
+
+}
+
+.Section_1_S3 .imageContainer {
+  flex: 1 1 50%; /* 圖表占60%寬度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 垂直置中 */
+}
+
+.textContent {
+  flex: 1 1 50%; 
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.articleBody {
+  display: flex;
+  flex-direction: column;
+  margin: 37px 29px 79px;
+}
+
+.fearOfVacationCard {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgba(248, 171, 146, 0.149);
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 29px 103px;
+}
+.cardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+.divider1 {
+  margin: 24px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.cardDescription {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 10.5px 0 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+.divider2 {
+  margin: 13.5px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.imageCaption1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 102px auto 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+}
+.vacationDenialCard {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgba(161, 216, 242, 0.247);
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.cardContent1 {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 29px 96px;
+}
+.cardDescription1 {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 11px 0 10px;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+.divider3 {
+  margin: 10px 0 10px 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.imageCaption2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 87px auto 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+}
+/* 3-S1 延伸討論 文字_文字_文字 end*/
+
+
+/* 3-S2 延伸討論 文字_文字_圖表_話框_圖表_話框 */
+.r1009 .discussionExtensionSection {
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+}
+.r1009 .contentWrapper7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 127.5px auto 542px;
+  width: 913px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .r1009 .contentWrapper7 {
+    margin: 127.5px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .r1009 .contentWrapper7 {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .contentWrapper7 {
+    margin: 50px auto;
+  }
+}
+.r1009 .textContainer2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.r1009 .headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 30.83%;
+  width: 303px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .r1009 .headingContainer {
+    margin: 0 auto;
+  }
+}
+.r1009 .titleWrapper1 {
+  display: flex;
+  flex-direction: column;
+  width: 194.0104217529px;
+  max-width: 85%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+.r1009 .sectionHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8.5px 0 11.5px;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.89px;
+}
+@media (max-width: 991px) {
+  .r1009 .sectionHeading {
+    font-size: 34px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .sectionHeading {
+    font-size: 30px;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .sectionHeading {
+    margin: 0 8px;
+  }
+}
+.r1009 .descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.r1009 .introText {
+  display: flex;
+  transform: translateY(-50%); 
+  text-align: center; 
+  margin: 48.5px auto 10.5px;
+  width: 603px;
+  max-width: 85%;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+.r1009 .illustrationImage3 {
+  position: relative;
+  bottom: -382px;
+  left: 55px;
+  width: 757px;
+}
+.r1009 .imageCaption3 {
+  position: relative;
+  right: -55px;
+  bottom: -235px;
+  display: flex;
+  align-items: center;
+  width: 193px;
+  height: 26px;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+}
+/* 3-S2 延伸討論 文字_文字_圖表_話框_圖表_話框 end*/
+
+/*  4-2 4-3 文字_文字_圖表_話框_圖表_話框 */
+.r1009 .hrToolsOverviewSection {
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
+.r1009 .contentWrapper8 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 103.5px auto 946px;
+  width: 656px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .r1009 .contentWrapper8 {
+    margin: 103.5px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .r1009 .contentWrapper8 {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .contentWrapper8 {
+    margin: 50px auto;
+  }
+}
+.r1009 .headerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r1009 .mainHeadingWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+.r1009 .mainHeading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.89px;
+}
+@media (max-width: 991px) {
+  .r1009 .mainHeading2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .mainHeading2 {
+    font-size: 30px;
+  }
+}
+.r1009 .infoContainer {
+  position: relative;
+  bottom: -900px;
+  left: -214px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0;
+  width: 1165px;
+}
+.r1009 .toolDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 4.64%;
+  width: 976.03125px;
+  max-width: 85%;
+  background-color: white;
+  outline: 2px solid #053657;
+  outline-offset: -2px;
+}
+.r1009 .toolDescriptionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  margin: 21px auto 26.5px;
+  width: 651px;
+  max-width: 85%;
+}
+.r1009 .toolDescriptionTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 30.72%;
+  width: 225px;
+  max-width: 85%;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .r1009 .toolDescriptionTitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .toolDescriptionTitle {
+    font-size: 18px;
+  }
+}
+.r1009 .toolDescriptionText {
+  display: flex;
+  align-items: center;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+.r1009 .featuresContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px 0;
+}
+.r1009 .keyFeaturesWrapper {
+  display: flex;
+  gap: 0 11px;
+  width: 100%;
+}
+
+.Section_2_5 .contentContainer,
+.Section_2_6 .contentContainer {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5% ;
+}
+
+.r1009 .keyFeaturesImage {
+  width: 707px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.r1009 .keyFeaturesContent {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 0 0;
+  width: 369px;
+  min-width: 0;
+  background: var(--src) center center/contain no-repeat;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.r1009 .keyFeaturesTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  margin: 30.5px 33px 101px auto;
+  width: 279.9791870117px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .r1009 .keyFeaturesTextWrapper {
+    margin: 30.5px 32px 101px auto;
+  }
+}
+@media (max-width: 575px) {
+  .r1009 .keyFeaturesTextWrapper {
+    margin: 30.5px 16px 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .keyFeaturesTextWrapper {
+    margin: 30.5px 8px 50px auto;
+  }
+}
+.r1009 .keyFeaturesTitle {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font: 700 20.8px/2.3 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .r1009 .keyFeaturesTitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .keyFeaturesTitle {
+    font-size: 18px;
+  }
+}
+.r1009 .keyFeaturesDescription {
+  display: flex;
+  align-items: center;
+  margin: 0 22px 0 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+@media (max-width: 575px) {
+  .r1009 .keyFeaturesDescription {
+    margin: 0 16px 0 0;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .keyFeaturesDescription {
+    margin: 0 8px 0 0;
+  }
+}
+.r1009 .toolSelectionWrapper {
+  display: flex;
+  gap: 0 1px;
+  width: 100%;
+}
+.r1009 .toolSelectionImage {
+  margin: 8px 0 0;
+  width: 795px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.r1009 .toolSelectionContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 109px;
+  width: 369px;
+  min-width: 0;
+  background: var(--src) center center/contain no-repeat;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 383px) {
+  .r1009 .toolSelectionContent {
+    margin: 0 0 50px;
+  }
+}
+.r1009 .toolSelectionTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  margin: 17.5px 33px 108px auto;
+  width: 279.9895935059px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .r1009 .toolSelectionTextWrapper {
+    margin: 17.5px 32px 108px auto;
+  }
+}
+@media (max-width: 575px) {
+  .r1009 .toolSelectionTextWrapper {
+    margin: 17.5px 16px 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .toolSelectionTextWrapper {
+    margin: 17.5px 8px 50px auto;
+  }
+}
+.r1009 .toolSelectionTitle {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font: 700 20.8px/2.3 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .r1009 .toolSelectionTitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .toolSelectionTitle {
+    font-size: 18px;
+  }
+}
+.r1009 .toolSelectionDescription {
+  display: flex;
+  align-items: center;
+  margin: 0 22px 0 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+@media (max-width: 575px) {
+  .r1009 .toolSelectionDescription {
+    margin: 0 16px 0 0;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .toolSelectionDescription {
+    margin: 0 8px 0 0;
+  }
+}
+
+/*  4-2 4-3 文字_文字_圖表_話框_圖表_話框 end */
+
+/* 小結 */
+.summarySection {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/cover no-repeat;
+}
+.contentWrapper10 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto 10px;
+  width: 1200px;
+  max-width: 85%;
+}
+
+.backgroundImage {
+  position: absolute;
+  bottom: -517.5000203848px;
+  left: -244px;
+  width: 1394px;
+}
+.headingContainer1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleWrapper2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 436px;
+  max-width: 85%;
+}
+.accentColor1 {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 707px;
+  height: 15px;
+  background-color: white;
+  transform: translate(-50%, 0);
+}
+.mainHeading3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 42px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.subHeading1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 21px 0 0;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.introText1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 34.5px 0 0;
+  width: 90%;
+  font: 700 20px/1.28 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.additionalResourcesBox {
+  position: relative;
+  bottom: -150.5px;
+  left: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* 使文字方格和內容垂直排列 */
+  width: 60%;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+
+.resourcesContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 18px auto 23px;
+  width: 89.66%;
+}
+
+.resourcesTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 11px 0;
+  margin: 23px 0 2px;
+  width: 443px;
+  min-width: 0;
+  
+}
+.resourcesHeader {
+  display: flex;
+  gap: 0 26px;
+}
+
+.peopleIcon {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.peopleHoverIcon {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.resourcesIcon {
+  width: 38px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.resourcesTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0 2px;
+  font: 700 24px/1.3 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+
+.resourceLinks {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 7px;
+  font: 700 16px/2.25 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+.resourcesIllustration {
+  width: 20%;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.resourceContainer {
+  font: 700 16px/2.25 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  margin: 0 0 0 7px;
+  letter-spacing: 1.6px;
+}
+.resourceContainer_span0,
+.resourceContainer_span1 {
+  font: 700 1em/2 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+.resourceContainer_span1 {
+  text-decoration: underline;
+}
+
+.suggestionsContainer {
+  position: relative;
+  bottom: -50.5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%; /* 設定文字方格之間的間隔為 5% */
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .suggestionsContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 50px 0;
+  }
+
+  .contentWrapper10 {
+    margin: 500px auto 350px;
+  }
+
+
+}
+
+/* 參考用:預設佈局：Flourish 圖表 60% 左側，文字方格和圖片 40% 右側 */
+@media (max-width: 768px) {
+  .discussionSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imageContainer, .contentContainer {
+    margin: 2em 0 0;
+    width: 80%; /* 當小於平板時，寬度變成100%並垂直排列 */
+    
+  }
+
+  .chart-wrapper, .statisticsWrapper, .screenshotWrapper {
+    width: 100%;
+  }
+  
+.Section_1_S1 .screenshotWrapper {
+    order: -1; /* 使 screenshotWrapper 在前面 */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* 10/17測試 */
+  .resourcesTextWrapper {
+    margin: 2em 0 0;
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+  }
+
+  .Section_3_S1 .vacationDenialCard {
+    margin: 3em 0 0;
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+    
+  }
+
+}
+
+
+.suggestionBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.suggestionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px 0;
+  margin: 47px 0 23.5px;
+}
+
+.suggestionTitle {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.aboutIllustration {
+  width: 150px;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  justify-content: center;
+
+}
+
+.suggestionDescription {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 85%;
+  font: 700 14px/1.82 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (min-width: 768px) {
+  .suggestionDescription {
+    margin-top: 40px;
+}
+
+}
+
+.suggestionContent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px 0;
+  margin: 47px 0 11px;
+}
+
+.suggestionContent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px 0;
+  margin: 33px 26px 11px 25px;
+}
+
+.suggestionTitle1 {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.suggestionDescription1 {
+  display: flex;
+  align-items: center;
+  width: 94.9%;
+  font: 700 14px/1.82 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+
+.Section_sum .statisticsWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+  width: 55%; 
+  min-width: 480px;
+  padding: 1.5% 2.5%; /* 左右各2.5%的間隔 */
+}
+
+
+/* 小結 end */
+
+@media (max-width: 768px) {
+  /* 小結區塊 */
+  .Section_sum .contentWrapper10 {
+      margin: 10px auto 0; /* 減少上下 margin 的空白 */
+      padding: 10px; /* 添加內部間距讓內容更加緊湊 */
+  }
+}
+
+
+
+
+/*主題區塊*/
+/* 主題1 */
+.r1009 .image19 {
+  width: 252px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* 主題1 */
+.r1009 .hero_title4 {
+  display: flex;
+  align-items: center;
+  font: 300 70px/0.85 Rubik, Helvetica, Arial, serif;
+  color: #fcc539;
+}
+
+.r1009 .hero_title3 {
+  display: flex;
+  align-items: center;
+  font: 700 50px/0.78 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+/* 主題1_當螢幕寬度小於768px時，進行手機版調整 */
+
+
+/* 主題1 2 */
+
+image13 {
+  width: 260px;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.salary .image13 {
+  width: 260px;
+  min-width: 0;
+  margin:0  4px  ;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.work-hours .image19 {
+  width: 260px;
+  min-width: 0;
+  margin:0  10px  ;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* 主題1 2 */
+
+
+/* 主題1_當螢幕寬度小於768px時，進行手機版調整 */
+@media (max-width: 768px) {
+  .image19 {
+    width: 100%; /* 設定圖片寬度為100%，讓其自適應手機螢幕 */
+    max-width: 18.75em; 
+    height: auto; /* 保持圖片的長寬比 */
+    align-items: center;
+  }
+
+  .image13 {
+    width: 100%; /* 設定圖片寬度為100%，讓其自適應手機螢幕 */
+    max-width: 18.75em; 
+    height: auto; /* 保持圖片的長寬比 */
+    align-items: center;
+  }
+  .hero_title4 {
+    font-size: 1.5em; 
+    align-items: center;
+  }
+
+  .hero_title3 {
+    font-size: 1.25em; 
+    margin-right: 12% ; 
+ 
+  }
+}
+
+.overtimeStatisticsSection {
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 主題1-1 */
+.workLifeBalanceSection {
+  position: relative;
+  z-index: 13;
+  display: flex;
+  flex-direction: column;
+}
+.contentWrapper2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 151px auto 64px;
+  width: 485px;
+  max-width: 85%;
+}
+.backgroundAccent1 {
+  position: absolute;
+  top: -31px;
+  left: -205px;
+  width: 976px;
+  height: 282px;
+  background-color: #f9f9f1;
+}
+.flexContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  width: 100%;
+}
+.messageBox {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 225px;
+  width: 150%;
+  min-width: 0;
+  background-image: var(--src);
+  background-size: contain; /* 圖片完整顯示，不會被裁切 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+.headlineContainer1_box {
+  display: flex;
+  align-items: center;
+  margin: 10px 13px 67px 18px;
+}
+.headlineContainer1 {
+  font: 700 20px/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+.headlineContainer1_span0 {
+  font: 700 1em/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.headlineContainer1_span1 {
+  font: 700 1.4em/1.71 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.illustrationImage {
+  z-index: 1;
+  margin: 78px 0 0;
+  width: 100%;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* 主題1-1 end */
+
+/* 手機版響應式設定 */
+@media (max-width: 768px) {
+  .contentWrapper2 {
+    align-items: center;
+    margin: 120px auto 50px;
+    width: 90%;
+  }
+  .flexContainer {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .messageBox {
+    width: 100%;
+    margin: 0 auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--src) center center/contain no-repeat; /* 確保圖片不會被裁切 */
+    background-size: contain; /* 調整圖片的大小使其不會被裁切 */
+  }
+  .headlineContainer1 {
+    font-size: 1.2em;
+    text-align: center; /* 文字水平置中 */
+  }
+  .illustrationImage {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .backgroundAccent1 {
+    height: 400px; /* 將高度調整至400px */
+  }
+
+  .management .backgroundAccent1 {
+    height: 300px; /* 將高度調整至300px */
+  }
+
+}
+
+@media (max-width: 48em) {
+  .contentWrapper2 {
+    margin: 100px auto 40px;
+    width: 85%;
+  }
+  .flexContainer {
+    gap: 1em;
+  }
+  .messageBox {
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--src) center center/contain no-repeat; /* 確保圖片不會被裁切 */
+    background-size: contain;
+  }
+  .headlineContainer1 {
+    font-size: 1.1em;
+    text-align: center; /* 文字水平置中 */
+  }
+}
+
+@media (max-width: 24em) {
+  .contentWrapper2 {
+    margin: 80px auto 30px;
+    width: 80%;
+  }
+  .headlineContainer1 {
+    font-size: 1em;
+    text-align: center; /* 文字水平置中 */
+  }
+  .messageBox {
+    width: 100%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--src) center center/contain no-repeat; /* 確保圖片不會被裁切 */
+    background-size: contain;
+  }
+  .illustrationImage {
+    width: 100%;
+    max-width: 180px;
+  }
+  .backgroundAccent1 {
+    height: 400px; /* 將高度調整至400px */
+  }
+}
+/* 主題1-1 end */
+
+
+/* 主題2-1 */
+
+.r1009 .headlineWrapper1 {
+  font: 700 20px/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .r1009 .headlineWrapper1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .headlineWrapper1 {
+    font-size: 16px;
+  }
+}
+.r1009 .headlineWrapper1_span0 {
+  font: 700 1em/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.r1009 .headlineWrapper1_span1 {
+  font: 700 1.4em/1.71 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+/* 主題2-1 end*/
+
+/* 主題3 */
+.r1009 .breathingSpaceSection {
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f1;
+}
+.r1009 .contentWrapper5 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 68px 7.31% 69px auto;
+  width: 1003.0208740234px;
+  max-width: 85%;
+}
+@media (max-width: 767px) {
+  .r1009 .contentWrapper5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.textContainer1 {
+  display: flex;
+  margin: 66.5px 0 33px;
+  width: 746px;
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  .r1009 .textContainer1 {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+@media (max-width: 575px) {
+  .r1009 .textContainer1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0;
+  }
+}
+
+.titleContainer3 {
+  display: flex;
+  flex-direction: column;
+  gap: 19px 0;
+  width: 599px;
+  min-width: 0;
+  margin: 0 50px;
+
+}
+
+.salary .titleContainer3 {
+  margin: 10px 0 0;
+}
+.work-hours .titleContainer3{
+  margin: 20px 0 0;
+}
+
+@media (max-width: 575px) {
+  .titleContainer3 {
+    align-items: center;  
+    width: 100%;
+  }
+}
+.mainTitle {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 4px;
+  font: 700 50px/0.78 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+.work-hours .mainTitle{
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 4px;
+  font: 700 50px/0.78 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  margin-top: 30px; 
+
+}
+.salary .mainTitle {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 4px;
+  font: 700 50px/0.78 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  margin-top: 10px; 
+
+}
+@media (max-width: 767px) {
+  .work-hours .mainTitle,
+  .salary .mainTitle   {
+    margin-top: 10px; /* 保持手機版的原始排版 */
+  }
+
+  .attendance .mainTitle {
+    margin-top: 20px; /* 保持手機版的原始排版 */
+  }
+
+}
+
+/* 電腦版 */
+@media (min-width: 767px) {
+  .work-hours .mainTitle,
+  .salary .mainTitle  {
+    margin-left: 5%; 
+  }
+
+
+}
+
+
+@media (max-width: 991px) {
+  .r1009 .mainTitle {
+    font-size: 46px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .mainTitle {
+    font-size: 36px;
+  }
+}
+.r1009 .subTitle {
+  display: flex;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .r1009 .subTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .subTitle {
+    font-size: 26px;
+  }
+}
+/* 主題3 end*/
+/* 主題3-1 */
+.r1009 .messageContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+@media (max-width: 575px) {
+  .r1009 .messageContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.r1009 .textContent1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 108px;
+  width: 620px;
+  min-width: 0;
+  background-image: var(--src);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  background-position:  calc(100% + 0px);
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 575px) {
+  .r1009 .textContent1 {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.r1009 .headlineWrapper1_box1 {
+  display: flex;
+  align-items: center;
+  margin: 12px 26px 65px 21px;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .r1009 .headlineWrapper1_box1 {
+    margin: 12px 16px 65px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .headlineWrapper1_box1 {
+    margin: 12px auto 65px;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .headlineWrapper1_box1 {
+    margin: 12px auto 50px;
+  }
+}
+.salary_1 .illustrationImage2 {
+  margin: 78px 0 20px;
+  width: 100px;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transform: scale(2) translateY(20px); /* 垂直方向放大 150% */
+  transform-origin: center; /* 以圖片中心為基準放大 */
+}
+.attendance_1 .illustrationImage2 {
+  margin: 78px 0 20px;
+  width: 196px;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transform: scale(1.5) translateY(20px); /* 垂直方向放大 150% */
+  transform-origin: center; /* 以圖片中心為基準放大 */
+}
+
+@media (max-width: 768px) {
+  .salary_1 .illustrationImage2 {
+    margin: 8px 0 0px;
+    width: 40%;
+    min-width: unset;
+    max-width: 80px;
+  }
+
+  .attendance_1 .illustrationImage2 {
+    margin: 8px 0 130px;
+    width: 80%;
+    min-width: unset;
+    max-width: 140px;
+  }
+
+}
+
+/* 主題3-1 end*/
+
+/* 主題4 */
+.r1009 .image5 {
+  width: 208px;
+  min-width: 0;
+  margin: 0 3px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .r1009 .image5 {
+    width: 100%;
+    min-width: unset;
+    max-width: 208px;
+    align-items: center;
+
+  }
+}
+/* 主題4 end*/
+
+/* 主題4-1 */
+.r1009 .messageContainer1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+@media (max-width: 383px) {
+  .r1009 .messageContainer1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 8px;
+    }
+}
+.messageContent {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 109px;
+  width: 300px;
+  min-width: 0;
+  background-image: var(--src);
+  background-size: contain; /* 圖片完整顯示，不會被裁切 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+  background-image: var(--src);
+  background-size: contain; /* 圖片完整顯示，不會被裁切 */
+}
+@media (max-width: 575px) {
+  .r1009 .messageContent {
+    margin: 0 0 80px;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .messageContent {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.r1009 .messageHeading_box {
+  display: flex;
+  align-items: center;
+  margin: 12px 5px 65px 16px;
+}
+@media (max-width: 383px) {
+  .r1009 .messageHeading_box {
+    margin: 12px 5px 50px 8px;
+  }
+}
+.r1009 .messageHeading {
+  font: 700 20px/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .r1009 .messageHeading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .r1009 .messageHeading {
+    font-size: 16px;
+  }
+}
+.r1009 .messageHeading_span0 {
+  font: 700 1em/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.r1009 .messageHeading_span1 {
+  font: 700 1.4em/1.71 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.illustrationImage4 {
+  margin: 88px 0 0;
+  width: 230px;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .r1009 .illustrationImage4 {
+    margin: 150px 0 0;
+    align-items: center;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .illustrationImage4 {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+    max-width: 208px;
+  }
+}
+/* 主題4-1 end*/
+
+
+/* footer */
+.r1009 .contactInfoSection {
+  display: flex;
+  flex-direction: column;
+}
+.r1009 .contactWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 77px auto 23px;
+  width: 86.17%;
+  max-width: 1202.9271240234px;
+}
+@media (max-width: 383px) {
+  .r1009 .contactWrapper {
+    margin: 50px auto 23px;
+  }
+}
+.r1009 .contactDetails {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.r1009 .contactInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 20px;
+  width: 928.8958740234px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .r1009 .contactInfo {
+    margin: 0 0 0 16px;
+  }
+}
+@media (max-width: 383px) {
+  .r1009 .contactInfo {
+    margin: 0 0 0 8px;
+  }
+}
+.r1009 .backgroundAccent4 {
+  position: absolute;
+  top: -77px;
+  left: -96px;
+  width: 1389px;
+  height: 311px;
+  background-color: #3e3a39;
+}
+
+.r1009 .addressContainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+}
+@media (max-width: 767px) {
+  .r1009 .addressContainer {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+.r1009 .locationIcon {
+  z-index: 1;
+  width: 214px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .r1009 .locationIcon {
+    width: 100%;
+    min-width: unset;
+    max-width: 214px;
+  }
+}
+.r1009 .addressText {
+  width: 662px;
+  font: 400 14px/2 Inter, Helvetica, Arial, serif;
+  color: white;
+}
+@media (max-width: 767px) {
+  .r1009 .addressText {
+    width: 100%;
+  }
+}
+.r1009 .divider4 {
+  z-index: 1;
+  margin: 47px 0 0;
+  width: 100.01%;
+  height: 1px;
+  min-height: 1px;
+  background-color: white;
+}
+
+.r1009 .copyrightText { 
+  position: absolute; 
+  bottom: -30px; 
+  width: 100%;
+  left: 50%; 
+  transform: translateX(-50%); /* 使用 translateX 使其完全置中 */
+  font: 400 12px/1.25 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+.r1009 .companyLogo {
+  position: absolute;
+  top: -14px;
+  left: 691px;
+  width: 338px;
+}
+
+/* footer end*/
+
+/*1-2區域*/
+/* 1-2區域 */
+.workloadSection {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  min-height: 170vh;
+}
+.headerContainer {
+  position: relative;
+  top: 324px;
+  left: 5px;
+  width: 1378px;
+}
+.accentBackground {
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 1378px;
+  height: auto;
+  background-color: white;
+  transform: translate(-50%, 0);
+}
+.headerContent {
+  position: relative;
+  top: -94.5px;
+  left: 433px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 471px;
+}
+.questionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 298px;
+  max-width: 100%;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  padding: 0 8px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+  letter-spacing: 1.89px;
+}
+.mainHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .mainHeading {
+    font-size: 26px;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 22px 0;
+  margin: 121px 4.88% 26px auto;
+  width: 320px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .infoContainer {
+    margin: 80px 4.88% 26px auto;
+  }
+}
+@media (max-width: 383px) {
+  .infoContainer {
+    margin: 50px 4.88% 26px auto;
+  }
+}
+.infoBox {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1px 0 0;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 9px 0;
+  margin: 38px 18px 27.5px 29px;
+}
+@media (max-width: 575px) {
+  .infoContent {
+    margin: 38px 16px 27.5px;
+  }
+}
+@media (max-width: 479px) {
+  .infoContent {
+    margin: 38px auto 27.5px;
+  }
+}
+.reasonHeader {
+  display: flex;
+}
+.reasonIcon {
+  width: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.reasonTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0 3px;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .reasonTitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .reasonTitle {
+    font-size: 18px;
+  }
+}
+.reasonDescription {
+  display: flex;
+  align-items: center;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+/* 1-2區域 下拉效果 */
+
+.ctaContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 1px;
+  height: auto;
+}
+
+.feedbackBtn {
+  display: flex; /* 使按鈕內容使用彈性布局 */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 33px 12px;
+  letter-spacing: 1.6px;
+}
+.decorativeImage {
+  margin: 5px 0 0 20px;
+  width: 25px;
+}
+/* 1-2區域 END */
+
+/* 調整BOX高度  */
+.feedbackBox {
+  transition: max-height 0.5s ease; /* 添加平滑過渡效果 */
+  height: auto;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+
+
+}
+
+/* 調整BOX高度 END */
+
+/* 1-2區域 跳出區塊 */
+.employeeTestimonialBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 1px;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 12px 58px 14px;
+}
+@media (max-width: 383px) {
+  .testimonialContainer {
+    margin: 24px 8px 50px;
+  }
+}
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 24px;
+  min-height: 24px;
+  padding: 0 30%; /* 左右各35%的間隔 */  
+}
+.testimonialTitle {
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+}
+.testimonialIcon {
+  width: 23px;
+  margin: 0 0 0 20px;
+}
+.firstTestimonialWrapper {
+  display: flex;
+  gap: 0 13px;
+  margin: 34px 0 0;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .firstTestimonialWrapper {
+    -moz-column-gap: 10%;
+    column-gap: 10%;
+  }
+}
+.firstTestimonialAvatar {
+  width: 60px;
+  min-height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.firstTestimonialContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  margin: 6px 0 0;
+  width: 220px;
+  min-width: 0;
+}
+.firstTestimonialName {
+  display: flex;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+.firstTestimonialQuote {
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+.secondTestimonialWrapper {
+  display: flex;
+  gap: 0 13px;
+  margin: 58px 0 0;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+  justify-content: center;
+
+}
+@media (max-width: 383px) {
+  .secondTestimonialWrapper {
+    -moz-column-gap: 10%;
+    column-gap: 10%;
+    margin: 50px 0 0;
+  }
+}
+.secondTestimonialAvatar {
+  width: 60px;
+  min-height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.secondTestimonialContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  margin: 6px 0 0;
+  width: 220px;
+  min-width: 0;
+}
+.secondTestimonialName {
+  display: flex;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+.secondTestimonialQuote {
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+/*1-2區域 跳出區塊 END*/
+
+/*1-3區域 對話框效果 */
+.careerInsightSection {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundDecoration1 {
+  position: absolute;
+  top: 142px;
+  left: 50%;
+  width: 1378px;
+  height: 456px;
+  background-color: white;
+  transform: translate(-50%, 0);
+}
+
+.flex_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 111px 0;
+  margin: 47.5px auto 99px;
+  width: 77.29%;
+}
+
+.callToActionColumn {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56.07%;
+}
+
+.ctaBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 417px;
+  max-width: 100%;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  padding: 0 8px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+  letter-spacing: 1.89px;
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 991px) {
+  .sectionHeading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sectionHeading {
+    font-size: 26px;
+  }
+}
+
+.flex_row {
+  display: flex;
+  gap: 0 7px;
+  margin: 0 0 0 135%;
+  width: 100%;
+}
+
+.flex_col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 36px 0;
+  width: 338px;
+  min-width: 0;
+}
+
+.infoBox1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px 0 1px;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.infoBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px 0;
+  margin: 37px 23px 40.5px 24px;
+}
+
+@media (max-width: 575px) {
+  .infoBoxContent {
+    margin: 37px 16px 40.5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .infoBoxContent {
+    margin: 37px auto 40.5px;
+  }
+}
+
+.infoBoxHeader {
+  display: flex;
+  gap: 0 22px;
+  width: 96.32%;
+}
+
+@media (max-width: 575px) {
+  .infoBoxHeader {
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+  }
+}
+
+@media (max-width: 383px) {
+  .infoBoxHeader {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+
+.infoBoxIcon {
+  width: 38px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.infoBoxTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0 3px;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .infoBoxTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .infoBoxTitle {
+    font-size: 18px;
+  }
+}
+
+.infoBoxDescription {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+.flex_row1 {
+  display: flex;
+  gap: 0 4px;
+}
+
+.quoteDecoration {
+  margin: 8px 0 51px;
+  width: 55px;
+  min-width: 0;
+  min-height: 55px;
+  background-color: #d9d9d9;
+  border-radius: 28px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+.content_box9 {
+  display: none; /* 初始隱藏 */
+  z-index: 1;
+  flex-direction: column;
+  width: 279px;
+  min-width: 0;
+  background: var(--src) center center/cover no-repeat;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.flex_col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  margin: 20px 33px 16px auto;
+  width: 179px;
+}
+
+.quoteAuthor {
+  display: flex;
+  align-items: center;
+  margin: 0 13px 0 0;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+.quoteText {
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+/*1-3區域 對話框效果 END */
+
+/* 1-5區域 輪播區塊 */
+.infoBox2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+  height: 280px;
+
+}
+
+.infoBox3 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+  height: 320px;
+
+}
+
+.infoBoxContent1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 0;
+  margin: 30px 19px 28px 7px;
+}
+
+@media (max-width: 575px) {
+  .infoBoxContent1 {
+    margin: 30px 16px 28px 7px;
+  }
+}
+
+@media (max-width: 383px) {
+  .infoBoxContent1 {
+    margin: 30px 8px 28px 7px;
+  }
+}
+
+.infoTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+  width: 100%;
+}
+
+.labelGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 24px;
+  min-height: 24px;
+}
+
+.sectionLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 24px;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.labelIcon {
+  position: relative;
+  margin: 8px 23.89% 5px auto;
+  width: 23px;
+}
+
+.infoTextContainer_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94.88%;
+}
+
+.infoTextContainer {
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.infoTextContainer_span0 {
+  font: 700 1em/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  
+}
+
+.infoTextContainer_span1 {
+  font: 0.8em/1.33 "Noto Sans JP", Helvetica, Arial, serif;
+  margin-top: 100px;
+
+}
+
+.infoTextContainer_span2 {
+  font: 400 12px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+}
+
+
+
+.indicatorRow {
+  position: absolute; /* 設置為絕對定位 */
+  bottom: 40px; /* 固定到底部 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0 18px;
+  width: 69px;
+  max-width: 85%;
+  z-index: 10; /* 提升 z-index 確保其在頂層 */
+  margin-top: 5px;
+}
+
+.feedbackBox {
+  position: relative;
+  z-index: 5; 
+}
+
+.activeIndicator,
+.inactiveIndicator,
+.inactiveIndicator2 {
+  width: 11px;
+  min-height: 11px;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.activeIndicator:hover,
+.inactiveIndicator:hover {
+  background-color: #f0eb47; /* 鼠標懸停時改變顏色，增加互動性 */
+}
+
+.learnMoreContainer_box {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.learnMoreContainer {
+  font: 700 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.learnMoreContainer_span0,
+.learnMoreContainer_span1 {
+  font: 700 1em/2 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+.learnMoreContainer_span1 {
+  text-decoration: underline;
+}
+/* 1-5區域 輪播區塊 END*/
+
+/*1-8區域 下拉效果 */
+.insightBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+  height: auto;
+}
+
+.insightContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 34px;
+  text-align: center;
+  height: auto;
+  
+}
+
+@media (max-width: 575px) {
+  .insightContent {
+    margin: 30px 16px 45px 7px;
+  }
+}
+
+@media (max-width: 383px) {
+  .insightContent {
+    margin: 30px 8px 45px 7px;
+  }
+}
+
+.insightHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  min-height: 24px;
+}
+
+.insightLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 293px;
+  height: 24px;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.insightIcon {
+  position: relative;
+  margin: 8px 23.89% 5px auto;
+  width: 23px;
+}
+
+.expertProfiles {
+  z-index: 1;
+  display: flex;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+  justify-content: center;
+}
+
+@media (max-width: 383px) {
+  .expertProfiles {
+    margin: 17px 8px 0;
+  }
+}
+
+.expertProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px 0;
+  width: 134px;
+  min-width: 0;
+}
+
+.expertAvatar {
+  margin: 0 32px 0 auto;
+  width: 60px;
+  max-width: 85%;
+  min-height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+@media (max-width: 575px) {
+  .expertAvatar {
+    margin: 0 16px 0 auto;
+  }
+}
+
+@media (max-width: 383px) {
+  .expertAvatar {
+    margin: 0 8px 0 auto;
+  }
+}
+
+.expertInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.expertAvatar1 {
+  margin: 0 33px 0 auto;
+  width: 60px;
+  max-width: 85%;
+  min-height: 60px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+@media (max-width: 991px) {
+  .expertAvatar1 {
+    margin: 0 32px 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .expertAvatar1 {
+    margin: 0 16px 0 auto;
+  }
+}
+
+@media (max-width: 383px) {
+  .expertAvatar1 {
+    margin: 0 8px 0 auto;
+  }
+}
+
+.insightQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25.5px 7px 0 8px;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.insightAnswer {
+  margin: 18.5px 12px 0 29px;
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 575px) {
+  .insightAnswer {
+    margin: 18.5px 12px 0 16px;
+  }
+}
+
+@media (max-width: 383px) {
+  .insightAnswer {
+    margin: 18.5px 8px 0;
+  }
+}
+
+/*1-8區域 下拉效果 END*/
+
+/* 1-S3區域 下拉效果區塊 */
+.remoteWorkAttitudeSection1 {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+.coverImage1 {
+  position: absolute;
+  top: 186px;
+  left: 11px;
+  width: 1378px;
+}
+.contentWrapper7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 74px 0;
+  margin: 98.5px auto 92px;
+  width: 1107.0250244141px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .contentWrapper7 {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .contentWrapper7 {
+    gap: 50px 0;
+    margin: 50px auto;
+  }
+}
+
+.contentLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  gap: 0 10px;
+}
+@media (max-width: 991px) {
+  .contentLayout {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+.sideImage {
+  width: 523px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .sideImage {
+    width: 100%;
+    min-width: unset;
+    max-width: 523px;
+  }
+}
+
+.sideImage1 {
+  width: 80%;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .sideImage2 {
+    width: 100%;
+    min-width: unset;
+    max-width: 523px;
+  }
+}
+
+.bgImage {
+  width: 100%;
+  min-width: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+@media (max-width: 991px) {
+  .bgImage {
+    width: 100%;
+    min-width: unset;
+    max-width: 523px;
+  }
+}
+.mainContent1 {
+  display: flex;
+  flex-direction: column;
+  width: 521px;
+  min-width: 0;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 991px) {
+  .mainContent1 {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.contentColumns {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 21px 15px 28px;
+}
+@media (max-width: 575px) {
+  .contentColumns {
+    margin: 37px 16px 79px;
+  }
+}
+@media (max-width: 479px) {
+  .contentColumns {
+    margin: 37px auto 79px;
+  }
+}
+@media (max-width: 383px) {
+  .contentColumns {
+    margin: 37px auto 50px;
+  }
+}
+.storyBackgroundHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 28px 10px 0;
+}
+@media (max-width: 575px) {
+  .storyBackgroundHeader {
+    margin: 0 16px 0 0;
+  }
+}
+@media (max-width: 383px) {
+  .storyBackgroundHeader {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0 8px 0 0;
+  }
+}
+.storyBackgroundTitle {
+  display: flex;
+  gap: 0 8px;
+  width: 200px;
+  min-width: 0;
+}
+.storyBackgroundIcon {
+  width: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.storyBackgroundHeading {
+  display: flex;
+  align-items: center;
+  margin: 3px 30px ;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+@media (max-width: 991px) {
+  .storyBackgroundHeading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .storyBackgroundHeading {
+    font-size: 18px;
+  }
+}
+.storyBackgroundDecoration {
+  margin: 23px 0 4px;
+  width: 23px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.divider2 {
+  margin: 7px 8px 0;
+  width: 96.6%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+@media (max-width: 1199px) {
+  .divider2 {
+    margin: 7px auto 0;
+  }
+}
+.storyContext {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 38.5px 0 0 8px;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+  letter-spacing: 1.6px;
+}
+.userOpinionHeader {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 45.5px 27px 0 0;
+}
+@media (max-width: 575px) {
+  .userOpinionHeader {
+    margin: 45.5px 16px 0 0;
+  }
+}
+@media (max-width: 383px) {
+  .userOpinionHeader {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 45.5px 8px 0 0;
+  }
+}
+.userOpinionTitle {
+  display: flex;
+  gap: 0 8px;
+  width: 129px;
+  min-width: 0;
+}
+
+.userOpinionIcon {
+  width: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.userOpinionHeading {
+  display: flex;
+  align-items: center;
+  margin: 3px 0 2px;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+@media (max-width: 991px) {
+  .userOpinionHeading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .userOpinionHeading {
+    font-size: 18px;
+  }
+}
+
+.userOpinionDecoration {
+  margin: 22px 0 2px;
+  width: 25px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.opinionDivider {
+  z-index: 1;
+  margin: 8px 8px 0;
+  width: 96.6%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+
+@media (max-width: 1199px) {
+  .opinionDivider {
+    margin: 8px auto 0;
+  }
+}
+
+.realCaseHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 27px 27px 0 0;
+}
+
+@media (max-width: 575px) {
+  .realCaseHeader {
+    margin: 27px 16px 0 0;
+  }
+}
+
+@media (max-width: 383px) {
+  .realCaseHeader {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 27px 8px 0 0;
+  }
+}
+
+.realCaseTitle {
+  display: flex;
+  gap: 0 8px;
+  margin: 0 0 1px;
+  width: 129px;
+  min-width: 0;
+}
+
+.realCaseIcon {
+  width: 37px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.realCaseHeading {
+  display: flex;
+  align-items: center;
+  margin: 3px 0 2px;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+@media (max-width: 991px) {
+  .realCaseHeading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .realCaseHeading {
+    font-size: 18px;
+  }
+}
+
+.realCaseDecoration {
+  margin: 25px 0 0;
+  width: 25px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.caseDivider {
+  margin: 7px 8px 0;
+  width: 96.6%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+
+@media (max-width: 1199px) {
+  .caseDivider {
+    margin: 7px auto 0;
+  }
+}
+
+/* 1-S3區域 下拉區塊 END */
+
+/* 1-S3區域 下拉效果測試 */
+.storyContent {
+  display: none; /* 初始隱藏回答文字 */
+  transition: height 0.5s ease; /* 添加過渡效果 */
+  margin-bottom: 40px;
+}
+
+.storyContent.open {
+  height: auto; /* 當內容展開時，高度自動調整 */
+  padding: 20px 0;
+}
+
+.toggleIcon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.qaItem {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #fdc023;
+}
+
+.storyBackgroundTitle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #053657;
+  display: flex;
+  align-items: center;
+}
+
+/* 1-S3區域 下拉效果測試 END */
+
+/*2-6區域 跳出效果*/
+
+.content_box4 {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+.flex_col18 {
+  display: flex;
+  flex-direction: column;
+  gap: 11px 0;
+  margin: 33px 38px 21px 14px;
+}
+
+@media (max-width: 991px) {
+  .flex_col18 {
+    margin: 33px 32px 21px 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .flex_col18 {
+    margin: 33px 16px 21px 14px;
+  }
+}
+
+@media (max-width: 383px) {
+  .flex_col18 {
+    margin: 33px 8px 21px;
+  }
+}
+
+.group5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  max-width: 85%;
+}
+
+.highlight12 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.image31 {
+  position: absolute;
+  top: 11px;
+  right: -501px;
+  width: 25px;
+}
+
+.line3 {
+  margin: 0 0 0 33px;
+  width: 95.95%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #053657;
+}
+
+@media (max-width: 991px) {
+  .line3 {
+    margin: 0 0 0 32px;
+  }
+}
+
+@media (max-width: 575px) {
+  .line3 {
+    margin: 0 0 0 16px;
+  }
+}
+
+@media (max-width: 383px) {
+  .line3 {
+    margin: 0 0 0 8px;
+  }
+}
+
+.employeeFeedbackBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4px 0 3px;
+  background-color: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.feedbackContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+  margin: 30px 34px 23.5px 7px;
+}
+
+.feedbackHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feedbackTitleContainer {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  margin: 0 14px 0 0;
+}
+
+.feedbackTitleGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 293px;
+}
+
+.feedbackTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.feedbackIcon {
+  position: absolute;
+  top: 12px;
+  right: -503px;
+  width: 23px;
+}
+.feedbackDivider {
+  margin: 0 0 0 23px;
+  width: 80%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #053657;
+}
+.topDivider {
+  margin: 0 0 0 37px;
+  width: 783px;
+  height: 1px;
+  min-height: 1px;
+  background-color: #053657;
+}
+
+.feedbackCommentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+  width: 95.49%;
+}
+.feedbackComments {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 75.38%;
+}
+.positiveComment {
+  display: flex;
+  gap: 0 13px;
+  width: 293px;
+  min-width: 0;
+}
+.positiveIndicator {
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.commentContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  margin: 6px 0 0;
+  width: 220px;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .feedbackComments {
+    flex-direction: column; /* 改成垂直排列 */
+    align-items: center;    /* 讓內容居中 */
+    gap: 20px 0;            /* 垂直間距 */
+    width: 100%;            /* 滿版寬度 */
+  }
+  }
+.commentAuthor {
+  display: flex;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+.commentText {
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+.negativeComment {
+  display: flex;
+  gap: 0 13px;
+  width: 293px;
+  min-width: 0;
+}
+.negativeIndicator {
+  margin: 0 0 24px;
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.userOpinionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px 0;
+  width: 100%;
+}
+.bottomDivider {
+  z-index: 1;
+  width: 783px;
+  height: 1px;
+  min-height: 1px;
+  background-color: #053657;
+}
+.userOpinionPrompt_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35.5%;
+}
+.userOpinionPrompt {
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.userOpinionPrompt_span0 {
+  font: 700 1em/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.userOpinionPrompt_span1 {
+  font: 0.8em/1.33 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+/* 2-6區域 跳出效果 END */
+
+/* 3-8區域 對話框效果 */
+.specialLeaveSection {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+.coverImage4 {
+  position: absolute;
+  top: 165px;
+  left: 210px;
+  width: 1065px;
+}
+.contentWrapper14 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 81px 0;
+  margin: 100.5px 16.05% 45px auto;
+  width: 742px;
+}
+.titleContainer6 {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 457px;
+}
+.specialLeaveBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 457px;
+  max-width: 100%;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  padding: 0 8px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+  letter-spacing: 1.89px;
+}
+.mainTitle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.dataContainer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 53px 0;
+  margin: 0 0 0 auto;
+  width: 334px;
+}
+.leaveTypeInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 9px 0 21px;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+.leaveTypeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 22px 0;
+  margin: 37px 29px 40.5px;
+}
+.leaveTypeHeader {
+  display: flex;
+  gap: 0 9px;
+}
+.leaveTypeIcon {
+  width: 38px;
+  min-width: 0;
+}
+.leaveTypeTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0 3px;
+  min-width: 0;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+.leaveTypeDescription {
+  display: flex;
+  align-items: center;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  letter-spacing: -0.7px;
+}
+.testimonialContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.colorAccents {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 51.2%;
+}
+.accentColor1 {
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.accentColor2 {
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+.HoverIcon1 {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.HoverIcon2 {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.testimonialCard,
+.testimonialCard1,
+.testimonialCard2 {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0 0;
+  width: 95.21%;
+  background: var(--src) center center/100% 100% no-repeat;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+  min-height: 200px;
+}
+
+.testimonialContent1,
+.testimonialContent2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+}
+
+.testimonialContent1 {
+  margin: 45px 12px 57px 29px;
+}
+
+.testimonialAuthor1,
+.testimonialAuthor2 {
+  display: flex;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+.testimonialQuote1,
+.testimonialQuote2 {
+  margin: 0 18px 0 0;
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+/*3-8 hover測試*/
+.testimonialContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.colorAccents {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 51.2%;
+}
+.accentColor1 {
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+.accentColor2 {
+  width: 60px;
+  min-width: 0;
+  min-height: 60px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border-radius: 30px;
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+.HoverIcon1 {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.HoverIcon2 {
+  width: 60px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.testimonialCard,
+.testimonialCard1 {
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  margin: 18px 0 0;
+  width: 400px;
+  background: var(--src) center center/100% 100% no-repeat;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+  min-height: 150px;
+}
+
+
+.testimonialContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+}
+
+.testimonialContent1 {
+  margin: 45px 12px 57px 29px;
+}
+
+.testimonialAuthor1 {
+  display: flex;
+  align-items: center;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+
+.testimonialQuote1 {
+  margin: 0 18px 0 0;
+  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.6px;
+}
+/*3-8 hover測試 end*/
+
+.attendanceMethodSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundContainer1 {
+  position: absolute;
+  top: 177px;
+  left: 40px;
+  width: 1311px;
+  height: 456px;
+  background-color: white;
+}
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 88px 0;
+  margin: 82.5px auto 41px;
+  width: 81.16%;
+}
+
+.titleArea {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 20.61%;
+  width: 572px;
+}
+
+.attendanceCheckBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 37.5px;
+  width: 497px;
+  max-width: 100%;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  padding: 0 8px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+  letter-spacing: 1.89px;
+}
+
+.headlineText1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.contentArea {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+.attendanceIllustration {
+  width: 706px;
+  min-width: 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px 0;
+  margin: 62px 0 22px;
+  width: 319px;
+  min-width: 0;
+}
+
+.infoCard {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 94.98%;
+  background-color: white;
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px 0;
+  margin: 38px 14px 40.5px 17px;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 0 7px;
+  width: 91.18%;
+}
+
+.cardIcon {
+  width: 37px;
+  min-width: 0;
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0 3px;
+  min-width: 0;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+
+.cardDescription {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+}
+
+.actionArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+}
+
+.examplesBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 319px;
+  height: 90px;
+  font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 33px 12px;
+  letter-spacing: 1.6px;
+}
+
+.actionIcon {
+  position: relative;
+  margin: 40px 16.93% 37px auto;
+  width: 25px;
+}
+
+
+/*3-8區域 對話框效果 END */
+
+
+
+/*關於我們*/
+.aboutUsSection {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.contentWrapper1 {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 54px;
+  width: 1146.95px;
+  max-width: 85%;
+
+}
+@media (max-width: 383px) {
+  .contentWrapper1 {
+    margin: 20px auto 50px;
+  }
+}
+.navContainer {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 198px;
+  max-width: 85%;
+}
+.aboutUsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+  height: 57px;
+  font: 700 38px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  padding: 0 18px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+  letter-spacing: 1.89px;
+}
+.teamInfoContainer {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 54px 0 0 3px;
+}
+@media (max-width: 383px) {
+  .teamInfoContainer {
+    margin: 50px 0 0 3px;
+  }
+}
+.teamDivider {
+  z-index: 2;
+  width: 100%;
+  height: 2px;
+  background-color: #053657;
+}
+.teamHeaderWrapper {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0;
+  margin: 42px 0 0;
+  width: 234.96px;
+  max-width: 85%;
+}
+.teamTitle {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .teamTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .teamTitle {
+    font-size: 26px;
+  }
+}
+.companyNameWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+.companyName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 11px 1px 0 5px;
+  font: 700 32px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .companyName {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .companyName {
+    font-size: 26px;
+  }
+}
+.companyName_span0 {
+  font: 700 0.75em/2 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.companyDescription_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13.81px 0 0;
+  width: 742.99px;
+  max-width: 85%;
+}
+.companyDescription {
+  font: 700 16px/3 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.companyDescription_span0 {
+  font: 700 1em/3 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.companyDescription_span1 {
+  font: 700 1em/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.companyDescription_span2 {
+  font: 700 2em/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.companyDescription_span3 {
+  font: 700 2em/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #d9d9d9;
+}
+.getStartedBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 0;
+  width: 249px;
+  max-width: 100%;
+  font: 700 24px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  background-color: #f0eb47;
+  border-radius: 33.5px;
+  padding: 9.5px 36px;
+  letter-spacing: 1.6px;
+}
+.partnerInfoContainer {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 23px 2px 0 1px;
+}
+.partnerDivider {
+  z-index: 3;
+  width: 100%;
+  height: 2px;
+  background-color: #053657;
+}
+.partnerTitle {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0 0;
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .partnerTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .partnerTitle {
+    font-size: 26px;
+  }
+}
+.partnerNameWrapper {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 0;
+  width: 199.95px;
+  max-width: 85%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #f0eb47 75%);
+}
+.partnerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 6px 0 8px;
+  font: 700 24px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+@media (max-width: 991px) {
+  .partnerName {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .partnerName {
+    font-size: 20px;
+  }
+}
+.partnerDescription_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 0 0;
+  width: 732.01px;
+  max-width: 85%;
+}
+.partnerDescription {
+  font: 700 16px/3 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+.partnerDescription_span0 {
+  font: 700 1em/3 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.partnerDescription_span1 {
+  font: 700 1em/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+}
+.getStartedBtn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+  width: 249px;
+  max-width: 100%;
+  font: 700 24px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  background-color: #f0eb47;
+  border-radius: 33.5px;
+  padding: 9.5px 36px;
+  letter-spacing: 1.6px;
+}
+.acknowledgementsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px 0;
+  margin: 23px 3px 20% 0;
+}
+.acknowledgementsDivider {
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background-color: #053657;
+}
+.acknowledgementsTitle_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 581.92px;
+  max-width: 85%;
+}
+
+.acknowledgementsTitle {
+  font: 700 32px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+@media (max-width: 991px) {
+  .acknowledgementsTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .acknowledgementsTitle {
+    font-size: 26px;
+  }
+}
+
+.acknowledgementsTitle_span0 {
+  font: 700 1em/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+.acknowledgementsTitle_span1 {
+  font: 700 0.75em/2 "Noto Sans JP", Helvetica, Arial, serif;
+}
+
+/*關於我們 end*/
+
+/*footer */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #3e3a39;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+  margin: 63px auto 23px;
+  width: 86.6%;
+  max-width: 1208.925px;
+}
+
+@media (max-width: 383px) {
+  .contactWrapper {
+    margin: 50px auto 23px;
+  }
+}
+
+.contactInfoContainer {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 0 0 0 20px;
+  width: 1014.887px;
+  max-width: 85%;
+}
+
+@media (max-width: 991px) {
+  .contactInfoContainer {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contactInfoContainer {
+    margin: 0 0 0 16px;
+  }
+}
+
+@media (max-width: 383px) {
+  .contactInfoContainer {
+    margin: 0 0 0 8px;
+  }
+}
+
+.addressContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  width: 565px;
+  min-width: 0;
+}
+
+@media (max-width: 991px) {
+  .addressContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 575px) {
+  .addressContainer {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+
+.logoImage1 {
+  z-index: 1;
+  width: 216px;
+  min-width: 0;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .logoImage1 {
+    width: 100%;
+    min-width: unset;
+    max-width: 216px;
+  }
+}
+
+.contactDetails {
+  width: 296px;
+  font: 400 14px/2 Inter, Helvetica, Arial, serif;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .contactDetails {
+    width: 100%;
+  }
+}
+
+.decorativeImage1 {
+  width: 340px;
+  min-width: 0;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .decorativeImage1 {
+    width: 100%;
+    min-width: unset;
+    max-width: 340px;
+  }
+}
+
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px 0;
+  margin-bottom: 50px;
+}
+
+.divider6 {
+  z-index: 1;
+  width: 100.01%;
+  height: 1px;
+  background-color: white;
+}
+
+.copyrightText {
+  display: flex;
+  justify-content: center;
+  font: 400 12px/1.25 Inter, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  left: 50%; 
+  transform: translateX(-50%); /* 使用 translateX 使其完全置中 */
+  margin-bottom: 30px;
+
+}
+/*footer end*/
+
+/* 3-S1區域 */
+.leaveRequestSection {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+}
+.coverImage3 {
+  position: absolute;
+  top: 174px;
+  left: 17px;
+  width: 1378px;
+}
+.contentWrapper13 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+  margin: 85.5px auto 142px;
+  width: 1073.9375px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .contentWrapper13 {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .contentWrapper13 {
+    margin: 50px auto;
+  }
+}
+.introductionContainer {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  margin: 0 19px 0 auto;
+  width: 91.53%;
+}
+@media (max-width: 575px) {
+  .introductionContainer {
+    margin: 0 auto;
+  }
+}
+.titleContainer5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 26.65%;
+  width: 370px;
+  max-width: 85%;
+}
+@media (max-width: 1199px) {
+  .titleContainer5 {
+    margin: 0 auto;
+  }
+}
+.introText1 {
+  display: flex;
+  align-items: center;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: black;
+}
+.insightContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+@media (max-width: 991px) {
+  .insightContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.fearOfLeaveCard {
+  display: flex;
+  flex-direction: column;
+  width: 521px;
+  min-width: 0;
+  background-color: rgba(248, 171, 146, 0.149);
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 991px) {
+  .fearOfLeaveCard {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.fearOfLeaveContent {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 29px 26.5px;
+}
+@media (max-width: 575px) {
+  .fearOfLeaveContent {
+    margin: 26px 16px 26.5px;
+  }
+}
+@media (max-width: 383px) {
+  .fearOfLeaveContent {
+    margin: 26px 8px 26.5px;
+  }
+}
+.fearOfLeaveHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .fearOfLeaveHeading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .fearOfLeaveHeading {
+    font-size: 18px;
+  }
+}
+.topDivider1 {
+  margin: 24px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.fearOfLeaveDescription {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 10.5px 0 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+.bottomDivider1 {
+  margin: 13.5px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.fearOfLeaveImage {
+  margin: 10px 0 0;
+  width: 362.012512207px;
+  max-width: 85%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.fearOfLeaveQuotes {
+  display: flex;
+  align-items: center;
+  margin: 4.5px 13px 0 0;
+  font: 700 13px/2.06 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+@media (max-width: 383px) {
+  .fearOfLeaveQuotes {
+    margin: 4.5px 8px 0 0;
+  }
+}
+.leaveRejectionCard {
+  display: flex;
+  flex-direction: column;
+  width: 521px;
+  min-width: 0;
+  background-color: rgba(161, 216, 242, 0.247);
+  outline: 2px solid #093657;
+  outline-offset: -2px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 991px) {
+  .leaveRejectionCard {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.leaveRejectionContent {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 29px 10.5px;
+}
+@media (max-width: 575px) {
+  .leaveRejectionContent {
+    margin: 26px 16px 10.5px;
+  }
+}
+@media (max-width: 383px) {
+  .leaveRejectionContent {
+    margin: 26px 8px 10.5px;
+  }
+}
+.leaveRejectionHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font: 700 20.8px/1.5 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .leaveRejectionHeading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .leaveRejectionHeading {
+    font-size: 18px;
+  }
+}
+.leaveRejectionDescription {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 11px 0 0;
+  font: 700 16px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+.bottomDivider2 {
+  margin: 10px 0 0 8px;
+  width: 98.27%;
+  height: 1px;
+  min-height: 1px;
+  background-color: #fdc023;
+}
+.leaveRejectionImage {
+  z-index: 1;
+  margin: 12px 0 0 2px;
+  width: 344.9750061035px;
+  max-width: 85%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.leaveRejectionQuotes {
+  display: flex;
+  align-items: center;
+  margin: 25.5px 0 0;
+  width: 389.9750061035px;
+  max-width: 85%;
+  font: 700 13px/2.06 "Noto Sans JP", Helvetica, Arial, serif;
+  color: rgba(5, 54, 87, 0.498);
+}
+/* 3-S1區域 END */
