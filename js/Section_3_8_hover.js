@@ -1,6 +1,6 @@
 const testimonialData = {
     'HoverIcon1': {
-        imgSrc: '../assets/跳出_對話框3.png',
+        imgSrc: '../assets/theme3_Rectangle.png',
         content: `
             <div class="testimonialContent1">
                 <p class="testimonialAuthor1">Jaie 執行長, DataLn</p>
@@ -9,7 +9,7 @@ const testimonialData = {
         `
     },
     'HoverIcon2': {
-        imgSrc: '../assets/跳出_對話框2.png',
+        imgSrc: '../assets/theme3_Rectangle1.png',
         content: `
             <div class="testimonialContent1">
                 <p class="testimonialAuthor1">Jaie 執行長, DataLn</p>
@@ -34,11 +34,11 @@ hoverIcons.forEach(icon => {
             console.log('Data found for:', iconId); // 日誌輸出
             testimonialCard.style.setProperty('--src', `url(${testimonialData[iconId].imgSrc})`);
             testimonialCard.innerHTML = testimonialData[iconId].content;
-            testimonialCard.style.display = 'block'; // 顯示 testimonialCard1
+            testimonialCard.style.opacity = '100%' // 顯示 testimonialCard1
         }
     });
 
     icon.addEventListener('mouseleave', () => {
-        testimonialCard.style.display = 'none'; // 滑鼠離開時隱藏 testimonialCard1
+        testimonialCard.style.opacity = '0'; // 滑鼠離開時隱藏 testimonialCard1
     });
 });

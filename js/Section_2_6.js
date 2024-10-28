@@ -2,19 +2,19 @@ function toggleFeedback(button) {
     const employeeFeedbackBox = button.nextElementSibling; // 將變數名稱改為 employeeFeedbackBox
 
     if (employeeFeedbackBox.style.display === "none" || employeeFeedbackBox.style.display === "") {
-        employeeFeedbackBox.style.display = "block";  // 顯示內容
-        button.style.display = "none";                 // 隱藏按鈕
+        employeeFeedbackBox.style.display = "grid";  // 顯示內容
+
 
         // 加入事件監聽器，點擊 employeeFeedbackBox 時隱藏它並顯示按鈕
         employeeFeedbackBox.addEventListener('click', function hideFeedbackBox() {
-            employeeFeedbackBox.style.display = "none";  // 隱藏內容
+            employeeFeedbackBox.style.display = "grid";  // 隱藏內容
             button.style.display = "block";               // 顯示按鈕
             
             // 移除事件監聽器，避免多次重複綁定
             employeeFeedbackBox.removeEventListener('click', hideFeedbackBox);
         });
     } else {
-        employeeFeedbackBox.style.display = "none";      // 隱藏內容
+        employeeFeedbackBox.style.display = "grid";      // 隱藏內容
         button.style.display = "block";                   // 顯示按鈕
     }
 }

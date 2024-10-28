@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 當滑鼠滑過色塊時
     peopleHoverIcon.addEventListener('mouseenter', function () {
-        contentBox.style.display = 'block'; // 顯示內容區域
+        contentBox.style.opacity = '100%'; // 顯示內容區域
     });
 
     // 當滑鼠移開色塊時
     peopleHoverIcon.addEventListener('mouseleave', function () {
-        contentBox.style.display = 'none'; // 隱藏內容區域
+        contentBox.style.opacity = '0'; // 隱藏內容區域
     });
 });
