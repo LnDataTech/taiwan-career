@@ -22,26 +22,7 @@
 <!-- nav 程式碼再檢查css -->
 <body class="flex-column">
 </div><body class="home page-template page-template-front-page page-template-front-page-php page page-id-31 top">
-    <a class="c-slidebar-button js-slidebar-button" href="#">
-        <span class="c-slidebar-button__line">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-    </a>
-    <div class="c-slidebar-menu js-slidebar-menu is-top-to-bottom">
-        <ul>
-            <li><a href="#work-hours">工時加班</a></li>
-            <li><a href="#salary">薪資獎金</a></li>
-            <li><a href="#attendance">請假打卡</a></li>
-            <li><a href="#management">企業管理</a></li>
-            <li><a href="#marketing">行銷建議</a></li>
-            <li><a href="#contact">關於我們</a></li>
-        </ul>
-    </div>
     
-    <!-- 側邊欄容器 -->
-    <div class="c-slidebar-container js-slidebar-container is-top-to-bottom"></div>
     <!-- 頁首 -->
     <div class="l-header-minimal js-fixedheader" role="banner">
         <div class="l-header-minimal__inner">
@@ -51,6 +32,9 @@
                     <img src="./assets/header_logo.png" alt="logo" class="logoImage" />
                 </div>
             </a>
+            
+            <!-- 開啟按鈕 (僅手機模式顯示) -->
+            <img id="menuToggleIcon" class="menu-toggle" src="./assets/menu.svg" alt="menu toggle" onclick="toggleMenu()" />
     
             <!-- 電腦版navbar -->
             <nav class="l-header-minimal__nav">
@@ -60,11 +44,22 @@
                     <li><a href="#attendance"><span>請假打卡</span></a></li>
                     <li><a href="#management"><span>企業管理</span></a></li>
                     <li><a href="#marketing"><span>行銷建議</span></a></li>
-                    <li><a href="#contact"><span>關於我們</span></a></li>				
-                    <li><a href="#contact"><span></span></a></li>				
+                    <li><a href="#contact"><span>關於我們</span></a></li>
                 </ul>
             </nav>
         </div>
+    </div>
+
+    <!-- Navbar Menu -->
+    <div class="navbar-menu" id="navbar">
+        <ul>
+            <li><a href="#work-hours">工時加班</a></li>
+            <li><a href="#salary">薪資獎金</a></li>
+            <li><a href="#attendance">請假打卡</a></li>
+            <li><a href="#management">企業管理</a></li>
+            <li><a href="#marketing">行銷建議</a></li>
+            <li><a href="#contact">關於我們</a></li>
+        </ul>
     </div>
 </div>
 
@@ -144,7 +139,7 @@
                     </div>
                     
                 </div>
-                <img class="overlayImage" src="./assets/theme1_img1.png" alt="Theme Image" />
+                <img class="overlayImage" src="./assets/theme1_img1.png" alt="主題插圖" />
             </div>    
         </section>
 
@@ -468,6 +463,7 @@
                             將近八成的工作者還是採全實體辦公，僅有1.6%的工作者是全遠距辦公。</p>
                     </div>
                 </div>
+                <img class="overlayImage" style="transform:scale(90%);transform: translateX(-60%);" src="./assets/theme1_wfh.png" alt="主題插圖" />
             </div>    
         </section>
 
@@ -623,8 +619,10 @@
                                         <img class="toggleIcon" src="./assets/down.svg" alt="開啟" />
                                     </div>
                                     <div class="storyContent">
-                                        <p class="storyContext">數位游牧家-Amber：我目前在國外，與公司進行遠端工作。對我而言，全遠端工作將距離成本降為零，並享受更自由地生活模式。對於住得離公司較遠的同仁來說，不必長時間通勤，有助於延長工作壽命；對公司而言，特別在人才短缺的時代，地點不再是限制，更能找到優秀的人才。當然，遠端工作也伴隨較高的溝通成本，且更要求個人的時間管理能力。總體來說，我認為能夠彈性選擇工作地點，不論是在公司還是遠端，都能更靈活地平衡工作與生活的節奏，對長期工作有正面影響。</p>
+                                        <p class="storyContext">數位游牧家-Amber：我目前在國外，與公司進行遠端工作。對我而言，全遠端工作將距離成本降為零，並享受更自由地生活模式。對於住得離公司較遠的同仁來說，不必長時間通勤，有助於延長工作壽命；對公司而言，特別在人才短缺的時代，地點不再是限制，更能找到優秀的人才。</p>
+                                        <p class="storyContext" style="max-width:80%">當然，遠端工作也伴隨較高的溝通成本，且更要求個人的時間管理能力。總體來說，我認為能夠彈性選擇工作地點，不論是在公司還是遠端，都能更靈活地平衡工作與生活的節奏，對長期工作有正面影響。</p>
                                     </div>
+                                    <img class="overlayImage" style="transform:scale(64%);" src="./assets/theme1_digitalnomad.png" alt="主題插圖" />
                                 </div>
                             </section>
                             
@@ -754,7 +752,7 @@
                                                     天花板還在?
                                                     <br />
                                                 </span>
-                                                <span class="infoTextContainer_span1">如果加班費申報流程複雜，或是採用實體模式，可能導致員工不敢申報或難以申報，甚至產生怨言</span>
+                                                <span class="infoTextContainer_span1">不過實際上，現在產業薪資差異的情況持續改善，所謂"天花板"也越來越少見。統計數據顯示反應的是特定產業中，不同性別在年資、學歷甚至職位選擇上可能存在差異。或許我們更須從教育開始，跳脫刻板的學業與職涯選擇思維。</span>
                                             </span>
                                         </p>
                                         
@@ -1222,6 +1220,7 @@
                         <p class="statisticsDescription">行動裝置打卡可取代紙本或實體卡片的需求，減少資源浪費，也更符合現代數位化和環保的趨勢。</p>
                     </div>
                 </div>
+                <img class="overlayImage" src="./assets/theme3_cellohonecheck.png" alt="主題插圖" />
             </div>    
         </section>
 
@@ -1323,11 +1322,11 @@
                                     <p class="learnMoreContainer_box">
                                         <span class="learnMoreContainer">
                                         <span class="learnMoreContainer_span0" id="learnMoreContainer1">了解更多：</span>
-                                        <span class="learnMoreContainer_span1">如何輕鬆管理員工</span>
+                                        <span class="learnMoreContainer_span1">如何輕鬆管理員工請假排班</span>
                                         </span>
                                     </p>
     
-                                    <div class="indicatorRow">
+                                    <div class="indicatorRow" style="bottom: 20px;">
                                         <div class="activeIndicator" 
                                              onmouseover="changeTextOnHover3('active')" 
                                              onmouseout="resetText3()"></div>
@@ -1461,8 +1460,8 @@
                         </div>
                         <article id="testimonialCard1" class="testimonialCard1" style="--src:url(../assets/theme3_Rectangle.png);">
                             <div class="testimonialContent1">
-                                <p class="testimonialAuthor1">Jaie 執行長, DataLn</p>
-                                <p class="testimonialQuote1">我們公司有「心情不好假」</p>
+                                <p class="testimonialAuthor1"></p>
+                                <p class="testimonialQuote1">誰想上班!?</p>
                             </div>
                         </article>
                     </div>
@@ -1593,15 +1592,15 @@
                                                     案例觀察:迷克夏
                                                     <br />
                                                 </span>
-                                                <span class="infoTextContainer_span1">讓排班像一杯奶茶絲滑!</span>
+                                                <span class="infoTextContainer_span1">人資系統解決了我們總部和門市使用不同工時制度的需求，從排班、考勤到結薪都可以順暢進行，讓我們釋放人資的能量，專注於更重要的工作。</span>
                                             </span>
                                         </p>
                                         
                                     </div>
                                     <p class="learnMoreContainer_box">
                                         <span class="learnMoreContainer">
-                          <span class="learnMoreContainer_span0"></span>
-                                        <span class="learnMoreContainer_span1"></span>
+                                        <span class="learnMoreContainer_span0">了解更多：</span>
+                                        <span class="learnMoreContainer_span1"><a href="https://blog.nueip.com/customer-testimonials/client%EF%BC%BFmilksha">迷克夏的成功故事</a></span>
                                         </span>
                                     </p>
                                 </div>
@@ -1869,6 +1868,7 @@
                         <span class="partnerDescription_span">NUEIP人資系統是全台灣領先的雲端人資系統品牌，提供人資管理、流程管理與業務管理等雲端企業管理解決方案。每天有超過3,000家企業客戶和超過25萬用戶使用NUEIP人資系統進行考勤、排班與計薪。Appier、COACH、Foodpanda、hahow好學校、tokuyo、施巴、迷客夏等知名企業均為NUEIP客戶。系統擁有ISO27001國際資安認證，嚴格把關資訊安全性與穩定性。勞基法令即時更新，便利企業符合法規。</span>
                         </span>
                     </article>
+                    <img src="./assets/aboutus_team_1.png" alt="團隊" class="aboutusImg">
                     <button class="getStartedBtn" id="cta2" style="margin-bottom: 15px;">
                         <a href="https://www.facebook.com/TheLnData/" class="social-link">
                             立即開始
@@ -1986,5 +1986,6 @@
 <script src="./js/Section_3_6_hover.js"></script>
 <script src="./js/Section_3_8_hover.js"></script>
 <script src="./js/hover.js"></script>
+<script src="./js/nav.js"></script>
 
 </html>

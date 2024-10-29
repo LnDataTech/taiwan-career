@@ -7,10 +7,10 @@ function changeTextOnHover3(state) {
     const indicators = document.querySelectorAll('.indicatorRow div'); // 取得所有指示器
 
     if (state === 'inactive') {
-        infoText1.innerHTML = '公司該給多少假?<br />';
-        infoText1.nextElementSibling.innerHTML = '優於勞基法的休假制度可增加員工幸福感，搭配特殊假的設置，除了也能在招募上提供額外的誘因以吸引求職者，更可配合企業文化，進一步打造雇主品牌。';
+        infoText1.innerHTML = '關於公司的請假制度<br />';
+        infoText1.nextElementSibling.innerHTML = '不論公假、事假、病假、家庭照顧假、特休、加班換休...等，企業可讓員工透過系統申請，必要時附上附件進行佐證，能更方便簽核與健行數據管理。';
         learnMoreContainer0.innerHTML = '了解更多：';
-        learnMoreContainer0.nextElementSibling.innerHTML = '如何合法保障勞工的假期權益';
+        learnMoreContainer0.nextElementSibling.innerHTML = '合法保障勞工的假期權益';
         lastTextState = 'inactive'; // 更新最後狀態
 
         // 指示器變色邏輯
@@ -23,9 +23,9 @@ function changeTextOnHover3(state) {
         });
     } else if (state === 'active') {
         infoText1.innerHTML = '企業該給多少假?<br />';
-        infoText1.nextElementSibling.innerHTML = '根據勞基法規定，企業應給予勞工基本假期';
-        learnMoreContainer0.innerHTML = '知道更多：';
-        learnMoreContainer0.nextElementSibling.innerHTML = '如何輕鬆管理員工';
+        infoText1.nextElementSibling.innerHTML = '優於勞基法的休假制度可增加員工幸福感，搭配特殊假的設置，除了也能在招募上提供額外的誘因以吸引求職者，更可配合企業文化，進一步打造雇主品牌。';
+        learnMoreContainer0.innerHTML = '了解更多：';
+        learnMoreContainer0.nextElementSibling.innerHTML = '如何輕鬆管理員工請假排班';
         lastTextState = 'active'; // 更新最後狀態
 
         // 指示器變色邏輯

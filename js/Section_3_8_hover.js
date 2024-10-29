@@ -3,8 +3,9 @@ const testimonialData = {
         imgSrc: '../assets/theme3_Rectangle.png',
         content: `
             <div class="testimonialContent1">
-                <p class="testimonialAuthor1">Jaie 執行長, DataLn</p>
-                <p class="testimonialQuote1">我們公司有「心情不好假」</p>
+                <p class="testimonialAuthor1">OOO, NUEIP</p>
+                <p class="testimonialQuote1">勞基法的假實在太少了，以NUEIP來說，會鼓勵員工去休息、充電。常見的特殊假包含不補班、自主連假、生日假、週五提早下班、全薪病假、心情假、旅遊假....等等。
+                </p>
             </div>
         `
     },
@@ -12,8 +13,8 @@ const testimonialData = {
         imgSrc: '../assets/theme3_Rectangle1.png',
         content: `
             <div class="testimonialContent1">
-                <p class="testimonialAuthor1">Jaie 執行長, DataLn</p>
-                <p class="testimonialQuote1">我們公司有「心情不好假」</p>
+                <p class="testimonialAuthor1">David, LnData 數據科學家</p>
+                <p class="testimonialQuote1">在數據公司上班，應該放一個「數據淨空假」！</p>
             </div>
         `
     }

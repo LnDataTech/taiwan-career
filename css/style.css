@@ -9,6 +9,105 @@
 }
 
 /* navbar */
+/* 手機版_navbar */
+/* 隱藏 navbar 預設狀態 */
+:root {
+  --fallback-font-stack: Helvetica, Arial, serif;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 20;
+  padding-top: 50px;
+  text-align: center;
+  visibility: hidden; /* 初始隱藏 */
+  transform: translateX(100%); /* 移出視窗 */
+  transition: transform 1.2s ease, visibility 1.2s ease;
+}
+
+/* 開啟 navbar 時的樣式 */
+.navbar-menu.active {
+  visibility: visible;
+  transform: translateX(0); /* 滑入視窗 */
+}
+
+
+/* 內部元素的樣式 */
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 35px 0;
+
+}
+
+.navbar-menu a {
+  font: 500 20px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  color: #053657;
+  text-decoration: none;
+  padding-bottom: 5px; /* 調整字體與下方邊界的距離 */
+  border-bottom: 1px solid #d8d5d5; /* 添加淺灰色的橫線 */
+  position: relative;}
+
+/* 滑鼠滑過時的效果 */
+
+.navbar-menu a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 10px;
+  width: 100%;
+  background-color: #f0eb47; /* 背景色設為黃色 */
+  z-index: -1; /* 讓背景色顯示在字體後方 */
+  transition: background-color 0.3s ease;
+}
+
+
+/* 隱藏 .menu-toggle 預設狀態，僅在手機版顯示 */
+.menu-toggle {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  /* 手機模式顯示 menu-toggle 並隱藏電腦版 navbar */
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  
+  .l-header-minimal__nav {
+      display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .var_flex_row {
+      justify-content: space-between;
+  }
+}
+
+/* 手機版_navbar end*/
+
+/* 電腦版_navbar */
 .logoLink {
   text-decoration: none; /* 移除預設連結樣式 */
 }
@@ -43,7 +142,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 29px auto 443px;
+  margin: 0 auto 80px;
   width: 92.77%;
   max-width: 1295.0625px;
   transition: all 0.8s ease-in-out !important;
@@ -51,21 +150,11 @@
 
 @media (max-width: 991px) {
   .contentWrapper {
-    margin: 29px auto 150px;
+    margin: 0 auto 150px;
   }
 }
 
-@media (max-width: 575px) {
-  .contentWrapper {
-    margin: 29px auto 80px;
-  }
-}
 
-@media (max-width: 383px) {
-  .contentWrapper {
-    margin: 29px auto 50px;
-  }
-}
 
 .mainContent {
   position: relative;
@@ -139,7 +228,7 @@
   display: flex;
   flex-direction: column;
   gap: 220px 0;
-  margin: 20% 20% 0 auto;
+  margin: 10% 20% 0 auto;
   width: 710px;
   max-width: 85%;
 }
@@ -1576,8 +1665,8 @@ image13 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px 0;
-  margin: 30px 19px 28px 7px;
+  gap: 12px 0;
+  margin: 12px 19px 28px 11px;
 }
 
 @media (max-width: 575px) {
@@ -1665,11 +1754,13 @@ image13 {
 .indicatorRow {
   position: absolute; /* 設置為絕對定位 */
   transition: all 0.6s ease;
-  bottom: 40px; /* 固定到底部 */
+  bottom: 30px; /* 固定到底部 */
   left: 50%;
   opacity: 0;
   transform: translateX(-50%);
   display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 0 18px;
   width: 69px;
   max-width: 85%;
@@ -2284,11 +2375,28 @@ image13 {
   margin-top: 20px;
   margin-bottom: 30px;
   border-bottom: 1px solid #fdc023;
+  overflow: hidden;
 }
 
 .qaItem.open .toggleIcon {
   transform: rotate(180deg);
 }
+
+.qaItem .overlayImage {
+  visibility: hidden;
+  transition: all 0.6s ease-in-out;
+  transform:translateY(100px);
+  transform: translateX(-25%);
+  opacity: 0;
+}
+
+.qaItem.open .overlayImage {
+  visibility:visible;
+  transform:translateY(10px);
+  transform: translateX(-55%);
+  opacity: 1;
+}
+
 
 .storyBackgroundTitle {
   cursor: pointer;
@@ -4821,6 +4929,11 @@ image13 {
   display: flex;
   flex-direction: column;
   background-color: #3e3a39;
+}
+
+.aboutusImg {
+  width:300px;
+  padding-bottom: 30px;
 }
 
 .contactWrapper {
