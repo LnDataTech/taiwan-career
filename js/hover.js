@@ -60,17 +60,22 @@ document.getElementById('amy').addEventListener('mouseout', resetContent);
 document.getElementById('jason').addEventListener('mouseout', resetContent);
 
 
+let currentCtaImage = './assets/aboutus_team_1.png'
+
 // 關於我們按鈕互動效果
 const getStartedBtn = document.getElementById('cta2');
-const acknowledgementsDivider = document.querySelector('.acknowledgementsDivider');
+const aboutusImg = document.querySelector('.aboutusImg');
+const partnerDescription = document.querySelector('.partnerDescription_box');
 const partnerNameWrapper = document.querySelector('.partnerNameWrapper');
 
 getStartedBtn.addEventListener('mouseover', () => {
-    acknowledgementsDivider.classList.add('hover-effect');
     partnerNameWrapper.classList.add('hover-effect');
+    partnerDescription.classList.add('hover-effect');
+    aboutusImg.src = './assets/aboutus_team_2.png'; // 換成想要的圖片路徑
 });
 
 getStartedBtn.addEventListener('mouseout', () => {
-    acknowledgementsDivider.classList.remove('hover-effect');
     partnerNameWrapper.classList.remove('hover-effect');
+    partnerDescription.classList.remove('hover-effect');
+    aboutusImg.src = currentCtaImage;
 });

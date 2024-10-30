@@ -4,7 +4,7 @@ const testimonialData = {
         content: `
             <div class="testimonialContent1">
                 <p class="testimonialAuthor1">OOO, NUEIP</p>
-                <p class="testimonialQuote1">勞基法的假實在太少了，以NUEIP來說，會鼓勵員工去休息、充電。常見的特殊假包含不補班、自主連假、生日假、週五提早下班、全薪病假、心情假、旅遊假....等等。
+                <p class="testimonialQuote1">勞基法的假實在太少了，以NUEIP來說，會鼓勵員工去休息、充電。除了圖表中的特殊假，不補班、自主連假、週五提早下班、全薪病假等也都是選項。
                 </p>
             </div>
         `

@@ -20,7 +20,7 @@ function changeTextOnHover(indicator) {
         infoTextContainer.innerHTML = '加班費怎麼給才合理?<br />';
         infoTextContainer.nextElementSibling.innerHTML = '具有加班的事實以及需求，給予方式確認合法合規（此時透過系統自動加權可大幅降低加班費發放的錯誤率）；於此同時，透過系統後台的數據呈現加班時數的即時總合，了解最近加班或是經常加班員工們的工作情形。';
         learnMoreContainer0.innerHTML = '了解更多：';
-        learnMoreContainer1.innerHTML = '如何輕鬆計算與核發加班費？';
+        learnMoreContainer1.innerHTML = '<a href="https://www.lndata.com/" target="_blank">如何輕鬆計算與核發加班費？</a>';
         inactiveIndicators[1].style.backgroundColor = '#f0eb47';
         inactiveIndicators[0].style.backgroundColor = '#d9d9d9'
         activeIndicator.style.backgroundColor = '#d9d9d9';

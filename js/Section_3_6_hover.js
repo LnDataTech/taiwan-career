@@ -10,7 +10,7 @@ function changeTextOnHover3(state) {
         infoText1.innerHTML = '關於公司的請假制度<br />';
         infoText1.nextElementSibling.innerHTML = '不論公假、事假、病假、家庭照顧假、特休、加班換休...等，企業可讓員工透過系統申請，必要時附上附件進行佐證，能更方便簽核與健行數據管理。';
         learnMoreContainer0.innerHTML = '了解更多：';
-        learnMoreContainer0.nextElementSibling.innerHTML = '合法保障勞工的假期權益';
+        learnMoreContainer0.nextElementSibling.innerHTML = '<a href="https://www.lndata.com/" target="_blank">合法保障勞工的假期權益</a>';
         lastTextState = 'inactive'; // 更新最後狀態
 
         // 指示器變色邏輯
@@ -25,7 +25,7 @@ function changeTextOnHover3(state) {
         infoText1.innerHTML = '企業該給多少假?<br />';
         infoText1.nextElementSibling.innerHTML = '優於勞基法的休假制度可增加員工幸福感，搭配特殊假的設置，除了也能在招募上提供額外的誘因以吸引求職者，更可配合企業文化，進一步打造雇主品牌。';
         learnMoreContainer0.innerHTML = '了解更多：';
-        learnMoreContainer0.nextElementSibling.innerHTML = '如何輕鬆管理員工請假排班';
+        learnMoreContainer0.nextElementSibling.innerHTML = '<a href="https://www.lndata.com/" target="_blank">如何輕鬆管理員工請假排班</a>';
         lastTextState = 'active'; // 更新最後狀態
 
         // 指示器變色邏輯
