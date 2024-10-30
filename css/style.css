@@ -209,14 +209,17 @@ body {
   .mainContent {
     gap: 150px 0;
     max-height: 650px;
+    margin-bottom: 120px;
   }
 }
 
-@media (max-width: 383px) {
+
+@media (max-width: 575px) {
   .mainContent {
-    gap: 50px 0;
+    margin-bottom: 0;
   }
 }
+
 
 .navigationBar {
   z-index: 1;
@@ -429,6 +432,8 @@ body {
   text-align: center;
   letter-spacing: 1.6px;
 }
+
+
 @media (max-width: 991px) {
   .surveyDescription {
     font-size: 16px;
