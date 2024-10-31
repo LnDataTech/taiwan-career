@@ -2726,6 +2726,13 @@ image13 {
   margin: 30px 34px 23.5px 7px;
 }
 
+@media (max-width: 420px) {
+  .feedbackContent {
+    gap: 20px 0;
+    margin: 20px 6px 20px 6px;
+  }
+}
+
 .feedbackHeader {
   display: flex;
   flex-direction: column;
@@ -2764,8 +2771,10 @@ image13 {
   width: 23px;
 }
 .feedbackDivider {
-  margin: 0 0 0 23px;
+  margin: 0 auto;
   width: 80%;
+  min-width: 192px;
+  max-height: 1px;
   height: 1px;
   min-height: 1px;
   background-color: #053657;
@@ -2795,7 +2804,8 @@ image13 {
 .positiveComment {
   display: flex;
   gap: 0 13px;
-  width: 293px;
+  width: 95%;
+  max-width: 293px;
   min-width: 0;
 }
 .positiveIndicator {
@@ -2839,7 +2849,8 @@ image13 {
 .negativeComment {
   display: flex;
   gap: 0 13px;
-  width: 293px;
+  width: 95%;
+  max-width: 293px;
   min-width: 0;
 }
 .negativeIndicator {
@@ -2870,7 +2881,7 @@ image13 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35.5%;
+  width: 98%;
 }
 .userOpinionPrompt {
   font: 700 15px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
@@ -4638,6 +4649,11 @@ image13 {
   width: 60px;
   -o-object-fit: contain;
   object-fit: contain;
+}
+@media (max-width: 420px) {
+  .peopleIcon {
+    width: 40px;
+  }
 }
 
 .peopleHoverIcon , .peopleHoverIcon2 {
