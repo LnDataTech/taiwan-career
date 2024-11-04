@@ -79,3 +79,17 @@ getStartedBtn.addEventListener('mouseout', () => {
     partnerDescription.classList.remove('hover-effect');
     aboutusImg.src = currentCtaImage;
 });
+
+const getStartedBtn1 = document.getElementById('cta1');
+const companyDescription = document.querySelector('.companyDescription_box');
+const companyNameWrapper = document.querySelector('.companyNameWrapper');
+
+getStartedBtn1.addEventListener('mouseover', () => {
+    companyNameWrapper.classList.add('hover-effect');
+    companyDescription.classList.add('hover-effect');
+});
+
+getStartedBtn1.addEventListener('mouseout', () => {
+    companyNameWrapper.classList.remove('hover-effect');
+    companyDescription.classList.remove('hover-effect');
+});
