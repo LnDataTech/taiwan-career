@@ -25,7 +25,7 @@ function changeTextOnHover3(state) {
         infoText1.innerHTML = '企業該給多少假?<br />';
         infoText1.nextElementSibling.innerHTML = '優於勞基法的休假制度可增加員工幸福感，搭配特殊假的設置，除了也能在招募上提供額外的誘因以吸引求職者，更可配合企業文化，進一步打造雇主品牌。';
         learnMoreContainer0.innerHTML = '了解更多：';
-        learnMoreContainer0.nextElementSibling.innerHTML = '<a href="http://c.lndata.com/c/a80780,b1458130,c4218,i0,m101,h" target="_blank">如何輕鬆管理員工請假排班</a>';
+        learnMoreContainer0.nextElementSibling.innerHTML = '<a href="http://c.lndata.com/c/a80780,b1458130,c4218,i0,m101,h" target="_blank">如何輕鬆管理員工請假加班</a>';
         lastTextState = 'active'; // 更新最後狀態
 
         // 指示器變色邏輯

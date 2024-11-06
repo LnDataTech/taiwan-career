@@ -20,8 +20,9 @@ const testimonialData = {
     }
 };
 
-// 取得 testimonialCard1 元素
+// 取得 testimonialCard1 和 testimonialContent1 元素
 const testimonialCard = document.getElementById('testimonialCard1');
+const testimonialContent = document.getElementById('testimonialContent1');
 
 // 取得 HoverIcon1 和 HoverIcon2 元素
 const hoverIcons = document.querySelectorAll('.colorAccents img');
@@ -36,10 +37,12 @@ hoverIcons.forEach(icon => {
             testimonialCard.style.setProperty('--src', `url(${testimonialData[iconId].imgSrc})`);
             testimonialCard.innerHTML = testimonialData[iconId].content;
             testimonialCard.style.opacity = '100%' // 顯示 testimonialCard1
+            testimonialContent.style.margin = '85px 12px 40px 29px'
         }
     });
 
     icon.addEventListener('mouseleave', () => {
         testimonialCard.style.opacity = '0'; // 滑鼠離開時隱藏 testimonialCard1
+        testimonialContent.style.margin = '0'
     });
 });

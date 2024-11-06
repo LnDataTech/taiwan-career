@@ -252,7 +252,7 @@ body {
 
 @media (max-width: 430px) {
   .mainContent {
-    max-height: 550px;
+    max-height: 580px;
     margin-bottom: -24px;
   }
   .contentWrapper.banner {
@@ -314,26 +314,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: 220px 0;
-  margin: 10% 20% 0 auto;
-  width: 710px;
+  margin: 10% auto 0 ;
+  width: 724px;
   max-width: 85%;
-}
-
-@media (max-width: 768px) {
-  .headlineContainer {
-    margin: 40% auto;
-  }
 }
 
 @media (max-width: 991px) {
   .headlineContainer {
     gap: 150px 0;
+    margin: 15% auto 0 ;
   }
 }
-
+@media (max-width: 768px) {
+  .headlineContainer {
+    margin: 18% auto;
+  }
+}
 @media (max-width: 575px) {
   .headlineContainer {
     gap: 80px 0;
+    margin: 40% auto;
   }
 }
 
@@ -392,7 +392,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 700 44px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 700 44px/1.4 "Noto Sans JP", Helvetica, Arial, serif;
   color: #053657;
   text-align: center;
   letter-spacing: 1.6px;
@@ -420,30 +420,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 700 40px/1 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 700 30px/1.2 "Noto Sans JP", Helvetica, Arial, serif;
   color: #053657;
   text-align: center;
   letter-spacing: 1.6px;
   margin: 20px 0;
-
+  width: 110%;
+  max-width: 840px;
 }
 @media (max-width: 991px) {
   .mainHeadline1 {
-    font-size: 34px;
+    font-size: 32px;
+    font: 700 30px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
   }
 }
 
 @media (max-width: 768px) {
   .mainHeadline1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 575px) {
   .mainHeadline1 {
-    font-size: 25px;
+    font-size: 24px;
+    margin: 8px 0;
   }
 }
-
+@media (max-width: 365px) {
+  .mainHeadline1 {
+    font-size: 21px;
+  }
+}
 
 
 
@@ -492,7 +499,13 @@ body {
   .surveyDescription {
     font-size: 16px;
     margin: 0 5% 0 ;
-
+  }
+}
+@media (max-width: 575px) {
+  .surveyDescription {
+    font-size: 14px;
+    margin: 0 5% 0 ;
+    padding-top: 5%;
   }
 }
 
@@ -1348,6 +1361,7 @@ image13 {
 }
 .decorativeImage {
   margin: 5px 0 0 20px;
+  pointer-events: none;
   width: 25px;
 }
 /* 1-2區域 END */
@@ -1903,16 +1917,22 @@ image13 {
 }
 
 .infoTextContainer_span1 {
-  font: 0.8em/1.33 "Noto Sans JP", Helvetica, Arial, serif;
-  margin-top: 100px;
-
+  font: 400 15px/1.8 "Noto Sans JP", Helvetica, Arial, serif;
+  margin-top: 80px;
 }
 
 .infoTextContainer_span2 {
-  font: 400 12px/1.6 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 400 15px/1.8 "Noto Sans JP", Helvetica, Arial, serif;
   color: black;
 }
-
+@media (max-width: 768px) {
+  .infoTextContainer_span1 {
+    font: 400 12px/1.4 "Noto Sans JP", Helvetica, Arial, serif;
+  }
+  .infoTextContainer_span2 {
+    font: 400 12px/1.4 "Noto Sans JP", Helvetica, Arial, serif;
+  }
+}
 
 
 .indicatorRow {
@@ -1967,15 +1987,15 @@ image13 {
 }
 
 .learnMoreContainer {
-  font: 700 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 700 15px/2 "Noto Sans JP", Helvetica, Arial, serif;
   color: #053657;
   text-align: center;
   letter-spacing: 1.6px;
 }
-
-.learnMoreContainer_span0,
-.learnMoreContainer_span1 {
-  font: 700 1em/2 "Noto Sans JP", Helvetica, Arial, serif;
+@media (max-width: 768px) {
+  .learnMoreContainer {
+    font: 700 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  }
 }
 
 .learnMoreContainer_span1 {
@@ -2216,6 +2236,7 @@ image13 {
     width: 100%;
     min-width: unset;
     max-width: 523px;
+    margin-bottom: 1em;
   }
 }
 
@@ -2272,12 +2293,12 @@ image13 {
 }
 @media (max-width: 575px) {
   .contentColumns {
-    margin: 37px 16px 79px;
+    margin: 15px 16px 15px;
   }
 }
 @media (max-width: 479px) {
   .contentColumns {
-    margin: 37px auto 79px;
+    margin: 10px auto 10px;
   }
 }
 @media (max-width: 420px) {
@@ -2582,38 +2603,61 @@ image13 {
 .qaItem .overlayImage {
   visibility: hidden;
   transition: all 0.6s ease-in-out;
-  transform:translateY(100px);
-  transform: translateX(-25%);
   opacity: 0;
+  top: 65%; 
+  left: 85%; 
+  z-index: 1; 
 }
 
 .qaItem.open .overlayImage {
   visibility:visible;
-  transform:translateY(10px);
-  transform: translateX(-55%);
   opacity: 1;
 }
 
+.qaItem.open .overlayImage:hover {
+  transform: scale(69%) translateX(20%) translateY(10%) !important;
+  opacity: 0.6;
+}
+
+
 @media (max-width: 1200px) {
   .qaItem.open .overlayImage {
-    top: 85%; /* 向下超出文字方格 */
+    top: 80% ; 
+    left: 85% ; 
   }
   }
 
+  @media (max-width: 1000px) {
+    .qaItem.open .overlayImage {
+      top: 75%; 
+      left: 88%; 
+    }
+    }
+
+  @media (max-width: 991px) {
+      .qaItem.open .overlayImage {
+        top: 82%; 
+        left: 86%; 
+      }
+    }
+
 @media (max-width: 768px) {
   .qaItem.open .overlayImage {
-    top: 90%; /* 向下超出文字方格 */
-    left: 30%; 
+    top: 94%; 
+    left: 45%; 
   }
   }
 
 @media (max-width: 390px) {
   .qaItem.open .overlayImage {
-    top: 93%; /* 向下超出文字方格 */
-    left: 27%; 
+    top: 90%; 
+    left: 45%; 
   }
   }
 
+#amber {
+  transform: scale(69%) translateX(17%);
+}
 
 .storyBackgroundTitle {
   cursor: pointer;
@@ -2846,10 +2890,16 @@ image13 {
   letter-spacing: 1.6px;
 }
 .commentText {
-  font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 400 15px/2 "Noto Sans JP", Helvetica, Arial, serif;
   color: black;
   letter-spacing: 1.6px;
 }
+@media (max-width: 768px) {
+  .commentText {
+    font: 400 12px/2 "Noto Sans JP", Helvetica, Arial, serif;
+  }
+}
+
 .negativeComment {
   display: flex;
   gap: 0 13px;
@@ -3078,15 +3128,16 @@ image13 {
   filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
   min-height: 150px;
 }
-
+@media (max-width: 420px) {
+  .testimonialCard1 {
+    margin: 0;
+  }
+} 
 
 .testimonialContent1 {
   display: flex;
   flex-direction: column;
   gap: 6px 0;
-}
-
-.testimonialContent1 {
   margin: 85px 12px 40px 29px;
 }
 
@@ -3682,8 +3733,19 @@ image13 {
 .contentContainer {
   flex: 1 1 40%; /* 文字方格和圖片占40%寬度 */
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 980px) {
+  .contentContainer {
+    width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
+    align-items: center;
+    align-content: center;
+  }
+  .statisticsWrapper {
+    margin: 0 auto;
+  }
 }
 
 .statisticsWrapper {
@@ -3893,12 +3955,21 @@ image13 {
   background-color:white;
   width: 80%; /* 占40%區域的80% */
   margin-bottom: 10%;
-  transition: height 0.6s ease; 
+  transition: all 0.6s ease; 
 }
 @media (max-width: 768px) {
   .screenshotWrapper1{
     width: 100%;
-  } 
+  }
+  .Section_3_8 .screenshotWrapper1 {
+    margin-bottom: 0;
+  }
+  .Section_3_2 {
+    margin-top: 0;
+  }
+  .Section_3_2 .titleContainer1 {
+    margin-top: 0;
+  }
 } 
 
 .Section_2_2 .screenshotWrapper,
@@ -3907,6 +3978,7 @@ image13 {
   background-color: white;
   transform: scale(0.8); /* 縮小到原來的 0.8 倍 */
   transform-origin: center; 
+  margin-bottom: 0;
 }
 
 
@@ -3926,6 +3998,7 @@ image13 {
 
 
 /* 電腦版，文字方格、圖表的margin調整  */
+
 @media (min-width: 768px) {
 
 
@@ -4055,12 +4128,13 @@ image13 {
 @media (max-width: 768px) {
   .challengesContainer {
     flex-direction: column;
+    justify-self: center;
     align-items: center;
   }
   
   .Section_1_S3 .imageContainer, 
   .Section_1_S3 .contentContainer{
-    margin: 2em 0 0;
+    margin: auto 0;
     width: 100%; /* 當小於平板時，寬度變成100%並垂直排列 */
     
   }
@@ -4199,22 +4273,30 @@ image13 {
   padding: 5% 5% ;
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-  .chartsContainer {
-    flex-direction: column;
-  }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .Section_2_5 .chart-wrapper,
+.Section_2_5 .chart-wrapper,
 .Section_2_6 .chart-wrapper {
-  flex:auto; /* 每個圖表佔 50% 寬度 */
+  flex: 1 1 50%; /* 每個圖表佔 50% 寬度 */
+  flex-direction: row;
+  padding: 0 5%;
+}
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+.Section_2_5 .chart-wrapper,
+.Section_2_6 .chart-wrapper {
+  flex:auto;
   width: 80%;
   min-width: 240px;
   max-width: 390px;
   flex-direction: column;
   padding: 0 5%;
 }
-.Section_2_5 .contentContainer,
-.Section_2_6 .contentContainer {
+.chartsContainer {
+  flex-direction: column;
+}
+
+.Section_2_5 .contentContainer {
   min-width: 240px;
   max-width: 390px;
 }
@@ -4409,6 +4491,19 @@ image13 {
 
 
 /* 參考用:預設佈局：Flourish 圖表 60% 左側，文字方格和圖片 40% 右側 */
+@media (max-width: 980px) {
+.Section_1_S1 .screenshotWrapper {
+    order: -1; /* 使 screenshotWrapper 在前面 */
+    margin-top: 50px;
+  }
+.Section_1_7 .statisticsWrapper , .Section_3_10 .statisticsWrapper {
+    margin-top: 50px;
+  }
+  .Section_1_7 {
+    margin-top: 80px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .discussionSection {
     flex-direction: column;
@@ -4423,10 +4518,6 @@ image13 {
 
   .chart-wrapper, .statisticsWrapper, .screenshotWrapper {
     width: 100%;
-  }
-  
-.Section_1_S1 .screenshotWrapper {
-    order: -1; /* 使 screenshotWrapper 在前面 */
   }
 
 }
@@ -4471,11 +4562,11 @@ image13 {
   .Section_2_8,
   .Section_2_9,
   .Section_3_1,
-  .Section_3_2,
   .Section_3_3,
   .Section_3_4,
   .Section_3_5,
   .Section_3_6,
+  .Section_3_6_2
   .Section_3_7,
   .Section_3_8,
   .Section_3_9,
@@ -4513,7 +4604,6 @@ image13 {
   .Section_2_7,
   .Section_2_9,
   .Section_3_1,
-  .Section_3_2,
   .Section_3_3,
   .Section_3_4,
   .Section_3_5,
@@ -4712,6 +4802,24 @@ image13 {
   color: #053657;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .resourcesTitle {
+    margin: 3px 0 2px;
+    font: 700 20px/1.3 "Noto Sans JP", Helvetica, Arial, serif;
+  }
+}
+@media (max-width: 420px) {
+  .resourcesTitle {
+    margin: 0;
+    font: 700 16px/1.3 "Noto Sans JP", Helvetica, Arial, serif;
+  }
+  .resourcesIcon {
+    width: 32px;
+  }
+  .resourcesHeader {
+    gap: 0 15px;
+  }
+}
 
 .resourceLinks {
   display: flex;
@@ -4739,10 +4847,7 @@ image13 {
   margin: 0 0 0 7px;
   letter-spacing: 1.6px;
 }
-.resourceContainer_span0,
-.resourceContainer_span1 {
-  font: 700 1em/2 "Noto Sans JP", Helvetica, Arial, serif;
-}
+
 
 .resourceContainer_span1 {
   text-decoration: underline;
@@ -4919,14 +5024,12 @@ image13 {
 
   .Section_sum .statisticsWrapper {
     margin: 2em 0 0;
+    width: 100%; 
+    min-width: unset;
   }
 
   .suggestionsContainer {
     margin: 0 0 2em;
-  }
-  
-  .resourcesIllustration {
-    width: 10px;
   }
   
 }
@@ -4944,18 +5047,20 @@ image13 {
 
  .resourcesTextWrapper {
     width: auto;
-    margin: 0 40px 0 ;
+    margin: 6px 12px ;
+    gap: 4px 0;
   }
   .resourceContainer {
-    font: 700 12px/2.25 "Noto Sans JP", Helvetica, Arial, serif;
+    font: 700 12px/1.8 "Noto Sans JP", Helvetica, Arial, serif;
     letter-spacing: 1.3px;
+    margin: 0;
   }
   .resourcesIllustration {
-    width: 5px;
+    min-width: 90px;
   }
-
-  
-  
+  .resourceContainer_span1 {
+    margin-bottom: 9px;
+  }
 }
 /* 手機版，小結格式 end */
 /* 小結 end */
@@ -5081,8 +5186,8 @@ image13 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 13.81px 0 0;
-  width: 742.99px;
+  margin: 13.8px 0 0;
+  width: 742px;
   max-width: 85%;
   transition: all 0.6s ease;
 }
@@ -5093,19 +5198,13 @@ image13 {
   letter-spacing: 1.6px;
   transition: all 0.6s ease;
 }
-.companyDescription_span0 {
-  font: 700 1em/3 "Noto Sans JP", Helvetica, Arial, serif;
+@media (max-width: 479px) {
+  .companyDescription {
+    font: 700 14px/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+    text-align: justify;
+  }
 }
-.companyDescription_span1 {
-  font: 700 1em/1.6 "Noto Sans JP", Helvetica, Arial, serif;
-}
-.companyDescription_span2 {
-  font: 700 2em/1.5 "Noto Sans JP", Helvetica, Arial, serif;
-}
-.companyDescription_span3 {
-  font: 700 2em/1.5 "Noto Sans JP", Helvetica, Arial, serif;
-  color: #d9d9d9;
-}
+
 .getStartedBtn {
   display: flex;
   justify-content: center;
@@ -5209,7 +5308,7 @@ image13 {
   justify-content: center;
   align-items: center;
   margin: 7px 0 0;
-  width: 732.01px;
+  width: 732px;
   max-width: 85%;
   transition: all 0.6s ease-in-out;
 }
@@ -5223,9 +5322,11 @@ image13 {
   padding-bottom: 1.5rem;
   transition: all 0.6s ease-in-out;
 }
-
-.partnerDescription_span {
-  font: 700 1em/2 "Noto Sans JP", Helvetica, Arial, serif;
+@media (max-width: 479px) {
+  .partnerDescription {
+    font: 700 14px/2.4 "Noto Sans JP", Helvetica, Arial, serif;
+    text-align:justify;
+  }
 }
 
 .partnerDescription_box.hover-effect , .companyDescription_box.hover-effect {
