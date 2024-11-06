@@ -852,7 +852,7 @@ image13 {
   display: flex;
   align-items: center;
   margin: 0 0 0 4px;
-  font: 700 50px/0.78 "Noto Sans JP", Helvetica, Arial, serif;
+  font: 700 50px/0.9 "Noto Sans JP", Helvetica, Arial, serif;
   color: #053657;
 }
 
@@ -885,7 +885,7 @@ image13 {
 
 @media (max-width: 991px) {
   .mainTitle {
-    font-size: 46px;
+    font-size: 45px;
   }
 }
 
