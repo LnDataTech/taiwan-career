@@ -2604,7 +2604,7 @@ image13 {
   visibility: hidden;
   transition: all 0.6s ease-in-out;
   opacity: 0;
-  top: 65%; 
+  top: 69%; 
   left: 85%; 
   z-index: 1; 
 }
@@ -2615,7 +2615,7 @@ image13 {
 }
 
 .qaItem.open .overlayImage:hover {
-  transform: scale(69%) translateX(20%) translateY(10%) !important;
+  transform: scale(64%) translateX(20%) translateY(10%) !important;
   opacity: 0.6;
 }
 
@@ -2656,7 +2656,7 @@ image13 {
   }
 
 #amber {
-  transform: scale(69%) translateX(17%);
+  transform: scale(64%) translateX(17%);
 }
 
 .storyBackgroundTitle {
@@ -4266,7 +4266,8 @@ image13 {
 }
 
 .Section_2_5 .contentContainer,
-.Section_2_6 .contentContainer {
+.Section_2_6 .contentContainer,
+.Section_2_8 .contentContainer {
   display: flex; 
   flex-direction: column;
   align-items: center;
@@ -4604,6 +4605,7 @@ image13 {
   .Section_2_7,
   .Section_2_9,
   .Section_3_1,
+  .Section_3_2,
   .Section_3_3,
   .Section_3_4,
   .Section_3_5,
