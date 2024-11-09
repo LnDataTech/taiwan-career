@@ -2279,6 +2279,9 @@ image13 {
   outline-offset: -2px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
 }
+.mainContent1 .contentColumns {
+  margin-bottom: 0 !important;
+}
 
 @media (max-width: 991px) {
   .mainContent1 {
@@ -2568,7 +2571,7 @@ image13 {
   display: grid; 
   flex-shrink: 2;
   overflow: hidden;
-  max-height: 1px;
+  max-height: 0px;
   grid-template-rows: 0fr;
   transition: all 0.6s ease; /* 添加過渡效果 */
   margin-bottom: 8px;
@@ -2619,7 +2622,12 @@ image13 {
   opacity: 0.6;
 }
 
-
+@media (min-width: 1500px) {
+  .qaItem.open .overlayImage {
+    top: 72% ; 
+    left: 88% ; 
+  }
+  }
 @media (max-width: 1200px) {
   .qaItem.open .overlayImage {
     top: 80% ; 
@@ -3118,7 +3126,7 @@ image13 {
 .testimonialCard1 {
   z-index: 1;
   display: flex;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.6s ease;
   flex-direction: column;
   margin: 18px 0 0;
