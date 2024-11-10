@@ -14,18 +14,17 @@ const screenshotImage = document.querySelector('.screenshotImage');
 let currentImage = './assets/mediaplatform_1.png';
 
 indicators.forEach(indicator => {
-    indicator.addEventListener('mouseover', (event) => {
+    indicator.addEventListener('click', (event) => {
+        // 獲取 data-id 並變更圖片
         const id = event.target.getAttribute('data-id');
         if (screenshotImages[id]) {
             screenshotImage.src = screenshotImages[id];
-            // 更新當前圖片的變數
             currentImage = screenshotImages[id];
         }
-    });
-
-    indicator.addEventListener('mouseout', () => {
-        // 保持在最後一次懸停的圖片
-        screenshotImage.src = currentImage;
+        
+        // 移除所有按鈕的 active 樣式，然後為當前按鈕新增 active 樣式
+        indicators.forEach(ind => ind.classList.remove('active'));
+        indicator.classList.add('active');
     });
 });
 
