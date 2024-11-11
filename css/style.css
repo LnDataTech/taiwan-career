@@ -1761,7 +1761,7 @@ image13 {
 }
 
 .content_box9 {
-  opacity: 0;
+  opacity: 1;
   transition: all 0.6s ease;
   z-index: 1;
   flex-direction: column;
@@ -1802,6 +1802,7 @@ image13 {
   color: black;
   letter-spacing: 1.6px;
 }
+
 /*1-3區域 對話框效果 END */
 
 /* 1-5區域 輪播區塊 */
@@ -4795,15 +4796,38 @@ image13 {
 .peopleHoverIcon , .peopleHoverIcon2 {
   z-index: 100;
   width: 60px;
-  opacity: 75%;
+  opacity: 84%;
   transition: all 0.6s ease;
   -o-object-fit: contain;
   object-fit: contain;
   cursor: pointer;
 }
 
+.attractAttention {
+  transition: all 0.6s ease;
+  animation: attractAttention 2s infinite ease-in-out;
+}
+.attractAttention:hover {
+  animation: none;
+}
+
+/* 定義循環動畫 */
+@keyframes attractAttention {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .peopleHoverIcon:hover , .peopleHoverIcon2:hover {
   opacity: 100%;
+  animation: none;
+  transform: scale(1.15) !important;
 }
 
 .resourcesIcon {
