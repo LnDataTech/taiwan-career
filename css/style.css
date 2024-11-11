@@ -4808,7 +4808,7 @@ image13 {
   animation: attractAttention 2s infinite ease-in-out;
 }
 .attractAttention:hover {
-  animation: none;
+  animation: paused;
 }
 
 /* 定義循環動畫 */
