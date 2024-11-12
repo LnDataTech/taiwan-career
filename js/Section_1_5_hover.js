@@ -18,7 +18,7 @@ function changeTextOnHover(indicator) {
         console.log("change inactive")
     } else if (indicator === 'Lndata') {
         infoTextContainer.innerHTML = '加班費的計算與管理：NUEIP餐飲業客戶<br />';
-        infoTextContainer.nextElementSibling.innerHTML = '只要員工有加班的事實以及需求，企業應合法合規給予加班費。透過系統自動加權可大幅降低加班費發放的錯誤率；於此同時，透過系統後台的數據呈現加班時數的即時總合，了解最近加班或是經常加班員工們的工作情形。';
+        infoTextContainer.nextElementSibling.innerHTML = '只要員工有加班的事實以及需求，企業就應合法合規給予加班費。透過系統自動加權可大幅降低加班費發放的錯誤率；於此同時，透過系統後台的數據呈現加班時數的即時總合，了解最近加班或是經常加班員工們的工作情形。';
         learnMoreContainer0.innerHTML = '了解更多：';
         learnMoreContainer1.innerHTML = '<a href="http://c.lndata.com/c/a80780,b1458126,c4218,i0,m101,h" target="_blank">如何輕鬆計算與核發加班費？</a>';
         inactiveIndicators[1].style.backgroundColor = '#f0eb47';
