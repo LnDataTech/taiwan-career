@@ -1770,6 +1770,16 @@ image13 {
   background: var(--src) center center/contain no-repeat;
   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.20));
 }
+.content_box8 {
+  opacity: 1;
+  transition: all 0.6s ease;
+  z-index: 1;
+  flex-direction: column;
+  min-width: 300px;
+  width: 304px;
+  background: var(--src) center center/contain no-repeat;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.20));
+}
 
 
 
@@ -1779,6 +1789,11 @@ image13 {
   gap: 6px 0;
   margin: 20px 33px 16px auto;
   width: 179px;
+}
+.content_box8 .flex_col2 {
+  margin: 20px 28px 16px auto;
+  min-width: 200px;
+  width: 210px;
 }
 
 @media (max-width: 390px) {
@@ -2667,6 +2682,47 @@ image13 {
 #amber {
   transform: scale(64%) translateX(17%);
 }
+#milk {
+  z-index: 81;
+  position: absolute;
+  left: 66%;
+  top: 56%;
+  transform: scale(25%) translateX(-12%);
+}
+@media (max-width: 1200px) {
+  #milk {
+    top: 58%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #milk {
+      left: 90%;
+    top: 44%; 
+    transform: scale(30%) translateX(-10%);
+    }
+  }
+
+  @media (max-width: 991px) {
+    #milk {
+      left: 90%;
+      }
+    }
+
+@media (max-width: 768px) {
+  #milk {
+    left: 75%;
+    top: 46%;
+  }
+  }
+
+@media (max-width: 420px) {
+  #milk {
+    left: 66%;
+    top: 50%;
+    transform: scale(24%) translateX(-10%);
+  }
+  }
 
 .storyBackgroundTitle {
   cursor: pointer;
