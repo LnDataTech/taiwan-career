@@ -62,6 +62,23 @@
     gtag('config', 'G-QHXDC2NF67');
     </script>
 
+    <!-- Event snippet for 網頁瀏覽 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-609123744/11vXCO362J4ZEKD7uaIC',
+          'event_callback': callback
+      });
+    }
+    </script>
+    
+
     <!-- LnSite tag  -->
     <script type="text/javascript">
     var _smq = _smq || [];
@@ -1948,8 +1965,8 @@
                         </span>
                     </article>
                     <img src="./assets/aboutus_team_1.png" alt="團隊" class="aboutusImg">
-                    <button class="getStartedBtn" id="cta2">
-                        <a href="http://c.lndata.com/c/a80780,b1458133,c4218,i0,m101,h" class="social-link" onclick="_smq.push(['custom','CTA','Conversion','NUEIP']);" target="_blank">
+                    <button class="getStartedBtn" id="cta2" onclick="return gtag_report_conversion('http://c.lndata.com/c/a80780,b1458133,c4218,i0,m101,h')">
+                        <a href="http://c.lndata.com/c/a80780,b1458133,c4218,i0,m101,h" class="social-link" onclick="_smq.push(['custom','CTA','Conversion','NUEIP']);return gtag_report_conversion('http://c.lndata.com/c/a80780,b1458133,c4218,i0,m101,h')" target="_blank">
                             立即開始
                         </a>
                     </button>
